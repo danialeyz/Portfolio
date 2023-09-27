@@ -1,0 +1,280 @@
+@import url(./fonts.css);
+* {
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "lora-regular", serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
+header {
+  overflow-y: hidden;
+  display: table;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/intro-bg.jpg) no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header .layer {
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: #111111;
+  opacity: 0.85;
+}
+header .layer .header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins-bold";
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: middle;
+  text-align: center;
+  color: azure;
+  line-height: 30px;
+  animation: slide-in-bottom 800ms cubic-bezier(0.315, 0.61, 0.455, 1) both;
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(170px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+}
+header .layer .header-text h1 {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.9450980392);
+  font-family: "poppins-medium", sans-serif;
+  font-size: 6rem;
+  line-height: 1.071;
+  max-width: 900px;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+header .layer .header-text h5 {
+  font-family: "poppins-bold", sans-serif;
+  font-size: 2.3rem;
+  line-height: 1.565;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  color: orangered;
+}
+header .layer .header-text h5 span {
+  color: rgb(204, 0, 95);
+}
+header .layer .header-text h6 {
+  overflow: hidden;
+  font-family: "lora-regular", serif;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  font-weight: normal;
+  font-style: normal;
+}
+header .layer .header-text .header-button {
+  margin-top: 20px;
+  width: 18rem;
+  height: 4rem;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(17, 17, 17, 0);
+  border: solid whitesmoke 0.5px;
+  border-radius: 4px;
+  color: #ffffff !important;
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+header .layer .header-text .header-button .header-button-chevron {
+  stroke-width: 2px;
+  margin-top: 5px;
+  color: #ffffff;
+  width: 30px;
+}
+header .layer .header-icons {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 7.2rem;
+  font-size: 3.3rem;
+  margin: 0;
+  padding: 0;
+  animation: slide-in-bottom 800ms cubic-bezier(0.315, 0.61, 0.455, 1) both;
+  animation-delay: 400ms;
+  text-decoration: none;
+}
+header .layer .header-icons a {
+  color: #ffffff;
+}
+header .layer .header-icons a:hover {
+  color: dimgrey;
+  transition-duration: 400ms;
+  cursor: pointer;
+}
+
+article {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 8rem;
+  width: 100vw;
+}
+article .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 65rem;
+  padding-inline: 40px;
+}
+article .container .section-1 {
+  padding: 0%;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+article .container .section-1 .profile-image {
+  margin-top: 140px;
+  margin-left: 40px;
+  align-self: center;
+  background-image: url(../images/profile-pic.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 180px;
+  width: 160px;
+  height: 148px;
+  border-radius: 100%;
+}
+article .container .section-1 .section-1-content {
+  justify-self: flex-end;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article .container .section-1 .section-1-content h6 {
+  color: rgb(204, 0, 95);
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.4rem;
+  font-family: "poppins-bold", sans-serif;
+}
+article .container .section-1 .section-1-content h2 {
+  font-size: 2.5rem;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  font-family: "poppins-bold", sans-serif;
+  font-weight: 800;
+  margin-bottom: 40px;
+  font-weight: 800;
+  font-style: bold;
+}
+article .container .section-1 .section-1-content p {
+  margin-left: 85px;
+  text-align: left;
+  font-family: "lora-regular", serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #888888;
+}
+article .container .section-2 {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+article .container .section-2 h6 {
+  font-family: "poppins-bold", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  line-height: 1.5;
+  color: #313131;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+article .container .section-2 p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "lora-regular", serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #6e6e6e;
+}
+article .container .section-2-skills {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+article .container .section-2-profile {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 300ms;
+}/*# sourceMappingURL=Main.css.map */
