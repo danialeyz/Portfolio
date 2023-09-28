@@ -1,13 +1,15 @@
-@import url(./fonts.css);
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap");
 * {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
+  box-sizing: inherit;
 }
 
 body {
   background-color: rgb(255, 255, 255);
-  font-family: "lora-regular", serif;
+  font-family: "Lora", serif;
   scroll-behavior: smooth;
 }
 
@@ -42,7 +44,7 @@ header .layer .header-text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "poppins-bold";
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
   vertical-align: middle;
@@ -64,8 +66,8 @@ header .layer .header-text {
 header .layer .header-text h1 {
   overflow: hidden;
   color: rgba(255, 255, 255, 0.9450980392);
-  font-family: "poppins-medium", sans-serif;
-  font-size: 6rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
   line-height: 1.071;
   max-width: 900px;
   margin-top: 0;
@@ -73,11 +75,12 @@ header .layer .header-text h1 {
   margin-left: auto;
   margin-right: auto;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  font-weight: 600;
+  font-weight: 550;
 }
 header .layer .header-text h5 {
-  font-family: "poppins-bold", sans-serif;
-  font-size: 2.3rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
   line-height: 1.565;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -86,19 +89,17 @@ header .layer .header-text h5 {
   color: orangered;
 }
 header .layer .header-text h5 span {
-  color: rgb(204, 0, 95);
+  color: rgb(221, 1, 104);
 }
 header .layer .header-text h6 {
   overflow: hidden;
-  font-family: "lora-regular", serif;
+  font-family: "Lora", serif;
   font-size: 1.2rem;
   line-height: 2.4rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: #ffffff;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  font-weight: normal;
-  font-style: normal;
 }
 header .layer .header-text .header-button {
   margin-top: 20px;
@@ -166,15 +167,14 @@ article .container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 65rem;
+  max-width: 55rem;
   padding-inline: 40px;
 }
 article .container .section-1 {
   padding: 0%;
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  place-items: center;
   width: 100%;
 }
 @keyframes slide-in-left {
@@ -187,58 +187,65 @@ article .container .section-1 {
     opacity: 1;
   }
 }
-article .container .section-1 .profile-image {
-  margin-top: 140px;
-  margin-left: 40px;
-  align-self: center;
+article .container .section-1 h6 {
+  color: rgb(221, 1, 104);
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-family: "Poppins", sans-serif;
+}
+article .container .section-1 h2 {
+  font-size: 2.5rem;
+  line-height: 1.875;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-style: normal;
+}
+article .container .section-1 .section-1-content {
+  padding-bottom: 2rem;
+  min-height: 10rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+article .container .section-1 .section-1-content .profile-image {
+  margin-bottom: 20px;
+  margin-left: 80px;
+  justify-self: center;
   background-image: url(../images/profile-pic.JPG);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 180px;
-  width: 160px;
-  height: 148px;
+  background-size: 150px;
+  min-width: 120px;
+  min-height: 118px;
   border-radius: 100%;
 }
-article .container .section-1 .section-1-content {
-  justify-self: flex-end;
-  max-width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-article .container .section-1 .section-1-content h6 {
-  color: rgb(204, 0, 95);
-  font-size: 1.6rem;
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.4rem;
-  font-family: "poppins-bold", sans-serif;
-}
-article .container .section-1 .section-1-content h2 {
-  font-size: 2.5rem;
-  line-height: 1.875;
-  margin-bottom: 0.3rem;
-  font-family: "poppins-bold", sans-serif;
-  font-weight: 800;
-  margin-bottom: 40px;
-  font-weight: 800;
-  font-style: bold;
-}
 article .container .section-1 .section-1-content p {
-  margin-left: 85px;
+  margin-right: 6rem;
   text-align: left;
-  font-family: "lora-regular", serif;
-  font-size: 1.4rem;
+  font-family: "Lora", serif;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: #888888;
+  font-weight: 100;
 }
 article .container .section-2 {
-  margin-top: 100px;
   width: 100%;
   display: flex;
+  flex-direction: column;
+}
+article .container .section-2 .section-2-content {
+  padding-inline: 20px;
+  width: 95%;
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  -moz-column-gap: 80px;
-       column-gap: 80px;
+  align-items: flex-start;
+  flex-direction: row;
 }
 @keyframes slide-in-right {
   0% {
@@ -251,10 +258,10 @@ article .container .section-2 {
   }
 }
 article .container .section-2 h6 {
-  font-family: "poppins-bold", sans-serif;
-  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.2rem;
   line-height: 1.5;
   color: #313131;
   font-style: normal;
@@ -272,9 +279,161 @@ article .container .section-2 p {
   color: #6e6e6e;
 }
 article .container .section-2-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 45%;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+article .container .section-2-skills .section-2-skills-graph ul {
+  display: grid;
+  row-gap: 2rem;
+}
+article .container .section-2-skills .section-2-skills-graph ul li {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  height: 100%;
+}
+article .container .section-2-skills .section-2-skills-graph ul li strong {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container {
+  background-color: rgba(182, 182, 182, 0.7764705882);
+  border-radius: 5px;
+  width: 100%;
+  height: 1rem;
+}
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container .percent80 {
+  --width: 80%;
+}
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container .percent85 {
+  --width: 85%;
+}
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container .percent90 {
+  --width: 88%;
+}
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container .percent95 {
+  --width: 92%;
+}
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container .progress {
+  background: #313131;
+  text-align: right;
+  color: azure;
+  padding-inline-end: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 0.8rem;
+  border-radius: 40px;
+  height: 100%;
+  width: var(--width);
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+article .container .section-2-skills .section-2-skills-items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 8rem 7rem 7rem;
+  gap: 10px;
+  row-gap: 15px;
+}
+article .container .section-2-skills .section-2-skills-items div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 2px;
+  padding-inline: 3px;
+  text-align: center;
+  border: #888888 solid 1px;
+  border-radius: 5px;
+  height: 3rem;
+  font-family: "poppins-bold", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #6e6e6e;
+}
+article .container .section-2-skills .section-2-skills-items div:hover {
+  border-color: rgb(221, 1, 104);
+  color: rgb(221, 1, 104);
+  cursor: pointer;
+}
+article .container .section-2-skills .section-2-skills-graph::after {
+  content: " ";
+  width: 1000%;
+  background-color: rgba(49, 49, 49, 0.6156862745);
+  height: 2px;
+  margin-bottom: 15px;
+}
 article .container .section-2-profile {
+  max-width: 45%;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 300ms;
+}
+article .container .section-2-profile ul {
+  margin-top: 3rem;
+}
+article .container .section-2-profile ul li {
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 10px;
+}
+article .container .section-2-profile ul li label {
+  font-family: "Poppins", sans-serif;
+  color: #414141;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+article .container .section-2-profile ul p {
+  position: relative;
+  top: -17px;
+  font-family: "Lora", serif;
+  color: #888888;
+  font-size: 0.9rem;
+}
+article .container .section-2-buttons {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+article .container .section-2-buttons button {
+  min-width: 18rem;
+  padding-inline: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  text-align: center;
+  border: solid 2px;
+  height: 3rem;
+  font-family: "poppins-bold", sans-serif;
+  font-weight: 550;
+  font-size: 0.9rem;
+  line-height: 2rem;
+  color: rgb(49, 49, 49);
+  transition-duration: 300ms;
+}
+article .container .section-2-buttons button:nth-child(2) {
+  background-color: rgb(49, 49, 49);
+  color: azure;
+  border: none;
+}
+article .container .section-2-buttons button:nth-child(2):hover {
+  cursor: pointer;
+  background-color: black;
+}
+article .container .section-2-buttons button:nth-child(1):hover {
+  color: rgb(221, 1, 104);
+  border-color: rgb(221, 1, 104);
+  cursor: pointer;
 }/*# sourceMappingURL=Main.css.map */

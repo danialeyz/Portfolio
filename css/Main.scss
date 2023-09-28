@@ -1,18 +1,23 @@
-@import url(./fonts.css);
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap");
 
 // varibles
-$Text-pink: rgb(204 0 95);
+$Text-pink: rgb(221, 1, 104);
+$poppin-Font: "Poppins", sans-serif;
+$Lora-Font: "Lora", serif;
 
 //Browser default reset
 * {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
+  box-sizing: inherit;
 }
 
+// Global styles
 body {
   background-color: rgb(255 255 255);
-  font-family: "lora-regular", serif;
+  font-family: $Lora-Font;
   scroll-behavior: smooth;
 }
 
@@ -32,6 +37,7 @@ header {
   background-size: cover;
   background-attachment: fixed;
 
+  // For the dark layer on the image
   .layer {
     overflow-y: hidden;
     display: flex;
@@ -48,7 +54,7 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family: "poppins-bold";
+      font-family: $poppin-Font;
       font-weight: normal;
       font-style: normal;
       vertical-align: middle;
@@ -87,8 +93,8 @@ header {
       h1 {
         overflow: hidden;
         color: #fffffff1;
-        font-family: "poppins-medium", sans-serif;
-        font-size: 6rem;
+        font-family: $poppin-Font;
+        font-size: 5rem;
         line-height: 1.071;
         max-width: 900px;
         margin-top: 0;
@@ -96,12 +102,13 @@ header {
         margin-left: auto;
         margin-right: auto;
         text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        font-weight: 600;
+        font-weight: 550;
       }
 
       h5 {
-        font-family: "poppins-bold", sans-serif;
-        font-size: 2.3rem;
+        font-family: $poppin-Font;
+        font-style: normal;
+        font-size: 1.5rem;
         line-height: 1.565;
         margin-bottom: 0;
         text-transform: uppercase;
@@ -115,15 +122,13 @@ header {
 
       h6 {
         overflow: hidden;
-        font-family: "lora-regular", serif;
+        font-family: $Lora-Font;
         font-size: 1.2rem;
         line-height: 2.4rem;
         text-transform: uppercase;
         letter-spacing: 0.2rem;
         color: #ffffff;
         text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-        font-weight: normal;
-        font-style: normal;
       }
 
       .header-button {
@@ -204,7 +209,7 @@ article {
     align-items: center;
     flex-direction: column;
 
-    max-width: 65rem;
+    max-width: 55rem;
     padding-inline: 40px;
 
     //  ========= SECTION 1 =========
@@ -213,9 +218,8 @@ article {
       -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
         both;
       animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      text-align: center;
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      place-items: center;
 
       width: 100%;
 
@@ -244,64 +248,72 @@ article {
         }
       }
 
-      .profile-image {
-        margin-top: 140px;
-        margin-left: 40px;
-        align-self: center;
-        background-image: url(../images/profile-pic.JPG);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 180px;
-        width: 160px;
-        height: 148px;
-        border-radius: 100%;
+      h6 {
+        color: $Text-pink;
+        font-size: 1.2rem;
+
+        letter-spacing: 0.2rem;
+        font-family: $poppin-Font;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        line-height: 1.875;
+        font-family: $poppin-Font;
+        font-weight: 800;
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-style: normal;
       }
 
       .section-1-content {
-        justify-self: flex-end;
-        max-width: 70%;
+        padding-bottom: 2rem;
+        min-height: 10rem;
+        max-width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: flex-start;
+        column-gap: 2rem;
 
-        h6 {
-          color: $Text-pink;
-          font-size: 1.6rem;
-
-          margin-bottom: 0.3rem;
-          letter-spacing: 0.4rem;
-          font-family: "poppins-bold", sans-serif;
-        }
-
-        h2 {
-          font-size: 2.5rem;
-          line-height: 1.875;
-          margin-bottom: 0.3rem;
-          font-family: "poppins-bold", sans-serif;
-          font-weight: 800;
-          margin-bottom: 40px;
-          font-weight: 800;
-          font-style: bold;
+        .profile-image {
+          margin-bottom: 20px;
+          margin-left: 80px;
+          justify-self: center;
+          background-image: url(../images/profile-pic.JPG);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 150px;
+          min-width: 120px;
+          min-height: 118px;
+          border-radius: 100%;
         }
         p {
-          margin-left: 85px;
+          margin-right: 6rem;
           text-align: left;
-          font-family: "lora-regular", serif;
-          font-size: 1.4rem;
+          font-family: $Lora-Font;
+          font-size: 1.2rem;
           line-height: 1.6;
           color: #888888;
+          font-weight: 100;
         }
       }
     }
 
     //  ========= SECTION 2 =========
     .section-2 {
-      margin-top: 100px;
       width: 100%;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      column-gap: 80px;
+      flex-direction: column;
+
+      .section-2-content {
+        padding-inline: 20px;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+      }
 
       @-webkit-keyframes slide-in-right {
         0% {
@@ -329,10 +341,10 @@ article {
       }
 
       h6 {
-        font-family: "poppins-bold", sans-serif;
-        font-size: 1.4rem;
+        font-family: $poppin-Font;
+        font-size: 1.3rem;
         text-transform: uppercase;
-        letter-spacing: 0.25rem;
+        letter-spacing: 0.2rem;
         line-height: 1.5;
         color: #313131;
         font-style: normal;
@@ -353,15 +365,188 @@ article {
     }
 
     .section-2-skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      max-width: 45%;
+
       -webkit-animation: slide-in-right 0.5s
         cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+      .section-2-skills-graph {
+        ul {
+          display: grid;
+          row-gap: 2rem;
+
+          li {
+            display: flex;
+            flex-direction: column-reverse;
+            position: relative;
+            height: 100%;
+
+            strong {
+              font-family: $poppin-Font;
+              font-weight: 400;
+              margin-bottom: 10px;
+            }
+
+            .progress-container {
+              background-color: #b6b6b6c6;
+              border-radius: 5px;
+              width: 100%;
+              height: 1rem;
+
+              .percent80 {
+                --width: 80%;
+              }
+              .percent85 {
+                --width: 85%;
+              }
+              .percent90 {
+                --width: 88%;
+              }
+              .percent95 {
+                --width: 92%;
+              }
+
+              .progress {
+                background: #313131;
+                text-align: right;
+                color: azure;
+                padding-inline-end: 20px;
+                font-family: $poppin-Font;
+                font-weight: 200;
+                font-size: 0.8rem;
+                border-radius: 40px;
+                height: 100%;
+                width: var(--width);
+                -webkit-animation: slide-in-right 1s
+                  cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                animation: slide-in-right 1s
+                  cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+              }
+            }
+          }
+        }
+      }
+      .section-2-skills-items {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 8rem 7rem 7rem;
+        gap: 10px;
+        row-gap: 15px;
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          column-gap: 10px;
+          padding: 2px;
+          padding-inline: 3px;
+          text-align: center;
+          border: #888888 solid 1px;
+          border-radius: 5px;
+          height: 3rem;
+          font-family: "poppins-bold", sans-serif;
+          font-size: 1rem;
+          line-height: 2rem;
+          color: #6e6e6e;
+        }
+
+        div:hover {
+          border-color: $Text-pink;
+          color: $Text-pink;
+          cursor: pointer;
+        }
+      }
+      .section-2-skills-graph::after {
+        content: " ";
+        width: 1000%;
+        background-color: #3131319d;
+        height: 2px;
+        margin-bottom: 15px;
+      }
     }
     .section-2-profile {
+      max-width: 45%;
       -webkit-animation: slide-in-right 0.5s
         cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       animation-delay: 300ms;
+
+      ul {
+        margin-top: 3rem;
+
+        li {
+          padding: 0%;
+          margin: 0%;
+          margin-bottom: 10px;
+
+          label {
+            font-family: $poppin-Font;
+            color: #414141;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+          }
+        }
+
+        p {
+          position: relative;
+          top: -17px;
+          font-family: $Lora-Font;
+          color: #888888;
+          font-size: 0.9rem;
+        }
+      }
     }
+
+    .section-2-buttons {
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      column-gap: 3rem;
+
+      button {
+        min-width: 18rem;
+        padding-inline: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 10px;
+        text-align: center;
+        border: solid 2px;
+        height: 3rem;
+        font-family: "poppins-bold", sans-serif;
+        font-weight: 550;
+        font-size: 0.9rem;
+        line-height: 2rem;
+        color: rgb(49 49 49);
+        transition-duration: 300ms;
+      }
+      button:nth-child(2) {
+        background-color: rgb(49 49 49);
+        color: azure;
+        border: none;
+      }
+
+      button:nth-child(2):hover {
+        cursor: pointer;
+        background-color: black;
+      }
+
+      button:nth-child(1):hover {
+        color: $Text-pink;
+        border-color: $Text-pink;
+        cursor: pointer;
+      }
+    }
+
+    // ================== SECTION 3===================
   }
 }
