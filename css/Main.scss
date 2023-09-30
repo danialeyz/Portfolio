@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap");
 
 // varibles
-$Text-pink: rgb(221, 1, 104);
+$Text-pink: rgb(255 0 119);
 $poppin-Font: "Poppins", sans-serif;
 $Lora-Font: "Lora", serif;
+$text-gray: #6e6e6e;
 
 //Browser default reset
 * {
@@ -16,7 +17,7 @@ $Lora-Font: "Lora", serif;
 
 // Global styles
 body {
-  background-color: rgb(255 255 255);
+  background-color: rgb(247, 247, 247);
   font-family: $Lora-Font;
   scroll-behavior: smooth;
 }
@@ -185,7 +186,7 @@ header {
       }
 
       a:hover {
-        color: dimgrey;
+        color: $Text-pink;
         transition-duration: 400ms;
         cursor: pointer;
       }
@@ -208,7 +209,7 @@ article {
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    justify-content: center;
     max-width: 55rem;
     padding-inline: 40px;
 
@@ -469,6 +470,7 @@ article {
         margin-bottom: 15px;
       }
     }
+
     .section-2-profile {
       max-width: 45%;
       -webkit-animation: slide-in-right 0.5s
@@ -512,7 +514,7 @@ article {
       column-gap: 3rem;
 
       button {
-        min-width: 18rem;
+        min-width: 13rem;
         padding-inline: 20px;
         display: flex;
         justify-content: center;
@@ -526,7 +528,7 @@ article {
         font-weight: 550;
         font-size: 0.9rem;
         line-height: 2rem;
-        color: rgb(49 49 49);
+        color: rgb(49, 49, 49);
         transition-duration: 300ms;
       }
       button:nth-child(2) {
@@ -544,9 +546,149 @@ article {
         color: $Text-pink;
         border-color: $Text-pink;
         cursor: pointer;
+        background-color: #00000000;
       }
     }
 
-    // ================== SECTION 3===================
+    // !================== SECTION 3 & 4 & 5 ===================
+
+    .section-3,
+    .section-4,
+    .section-5 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 2rem;
+      padding-top: 8rem;
+      font-family: $Lora-Font;
+
+      .header-intro {
+        text-align: center;
+        max-width: 70%;
+
+        h5 {
+          font-family: $poppin-Font;
+          color: $Text-pink;
+          font-size: 1.2rem;
+          line-height: 1.875;
+          margin-bottom: 0.3rem;
+          letter-spacing: 0.2rem;
+        }
+
+        h1 {
+          font-family: $poppin-Font;
+          font-size: 2.8rem;
+          font-weight: 400;
+          color: #313131;
+          line-height: 1.25;
+          margin-bottom: 1.2rem;
+        }
+
+        p {
+          color: $text-gray;
+          font-family: $Lora-Font;
+          font-size: 1.3rem;
+        }
+      }
+
+      .resume-header {
+        text-align: center;
+        color: $Text-pink;
+        font-family: $poppin-Font;
+        font-size: 1.2rem;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+      }
+
+      .blocks-main-container {
+        width: 100%;
+
+        .timeline-wrap {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          position: relative;
+          margin-top: 1.5rem;
+          margin-bottom: 6rem;
+
+          .blocks-second-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 100%;
+            width: 100%;
+            padding-left: 4rem;
+            row-gap: 2.5rem;
+
+            .timeline-block {
+              padding-bottom: 30px;
+
+              .timeline-ico {
+                position: absolute;
+                display: grid;
+                place-items: center;
+                width: 2.3rem;
+                height: 2.3rem;
+                background-color: #000000;
+                border-radius: 100%;
+                color: azure;
+                margin-left: -3rem;
+                margin-right: 20px;
+              }
+
+              .timeline-header {
+                font-family: $poppin-Font;
+                margin-bottom: 0.8rem;
+
+                p {
+                  color: $text-gray;
+                }
+              }
+
+              .timeline-content {
+                font-family: $Lora-Font;
+                width: 90%;
+
+                h4 {
+                  margin-bottom: 8px;
+                  font-family: $poppin-Font;
+                  color: $Text-pink;
+                }
+
+                p {
+                  color: $text-gray;
+                  font-size: 1.1rem;
+                  line-height: 1.6rem;
+                }
+              }
+            }
+          }
+        }
+
+        .timeline-wrap::before {
+          content: "";
+          display: block;
+          width: 1px;
+          height: 100%;
+          background: rgb(155, 155, 155);
+          position: absolute;
+          left: 2.2rem;
+          top: 0;
+        }
+      }
+    }
+
+    .section-4,
+    .section-5 {
+      padding-top: 0px;
+      h2 {
+        font-size: 2rem;
+        letter-spacing: 3px;
+      }
+    }
   }
 }
