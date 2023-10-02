@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap");
+:root {
+  --swiper-theme-color: #f90c7d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -8,14 +16,13 @@
 }
 
 body {
-  background-color: rgb(247, 247, 247);
   font-family: "Lora", serif;
   scroll-behavior: smooth;
+  background-color: #111111;
 }
 
 ::-webkit-scrollbar {
   display: none;
-  scroll-behavior: smooth;
 }
 
 header {
@@ -59,9 +66,19 @@ header .layer .header-text {
     opacity: 0;
   }
   100% {
-    transform: translateY(-50px);
+    transform: translateY(-100px);
     opacity: 1;
   }
+}
+header .layer .header-text .logo {
+  display: grid;
+  place-items: center;
+  max-width: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 2rem;
+}
+header .layer .header-text .logo img {
+  max-width: 19rem;
 }
 header .layer .header-text h1 {
   overflow: hidden;
@@ -89,7 +106,7 @@ header .layer .header-text h5 {
   color: orangered;
 }
 header .layer .header-text h5 span {
-  color: rgb(255, 0, 119);
+  color: #f90c7d;
 }
 header .layer .header-text h6 {
   overflow: hidden;
@@ -149,7 +166,7 @@ header .layer .header-icons a {
   color: #ffffff;
 }
 header .layer .header-icons a:hover {
-  color: rgb(255, 0, 119);
+  color: #f90c7d;
   transition-duration: 400ms;
   cursor: pointer;
 }
@@ -161,6 +178,7 @@ article {
   justify-content: center;
   padding-top: 8rem;
   width: 100vw;
+  background-color: rgb(247, 247, 247);
 }
 article .container {
   position: relative;
@@ -189,7 +207,7 @@ article .container .section-1 {
   }
 }
 article .container .section-1 h6 {
-  color: rgb(255, 0, 119);
+  color: #f90c7d;
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
   font-family: "Poppins", sans-serif;
@@ -358,8 +376,8 @@ article .container .section-2-skills .section-2-skills-items div {
   color: #6e6e6e;
 }
 article .container .section-2-skills .section-2-skills-items div:hover {
-  border-color: rgb(255, 0, 119);
-  color: rgb(255, 0, 119);
+  border-color: #f90c7d;
+  color: #f90c7d;
   cursor: pointer;
 }
 article .container .section-2-skills .section-2-skills-graph::after {
@@ -434,8 +452,8 @@ article .container .section-2-buttons button:nth-child(2):hover {
   background-color: black;
 }
 article .container .section-2-buttons button:nth-child(1):hover {
-  color: rgb(255, 0, 119);
-  border-color: rgb(255, 0, 119);
+  color: #f90c7d;
+  border-color: #f90c7d;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -453,6 +471,10 @@ article .container .section-5 {
 article .container .section-3 .header-intro,
 article .container .section-4 .header-intro,
 article .container .section-5 .header-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   max-width: 70%;
 }
@@ -460,7 +482,7 @@ article .container .section-3 .header-intro h5,
 article .container .section-4 .header-intro h5,
 article .container .section-5 .header-intro h5 {
   font-family: "Poppins", sans-serif;
-  color: rgb(255, 0, 119);
+  color: #f90c7d;
   font-size: 1.2rem;
   line-height: 1.875;
   margin-bottom: 0.3rem;
@@ -487,11 +509,15 @@ article .container .section-3 .resume-header,
 article .container .section-4 .resume-header,
 article .container .section-5 .resume-header {
   text-align: center;
-  color: rgb(255, 0, 119);
+  color: #f90c7d;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   margin-bottom: 5rem;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 article .container .section-3 .blocks-main-container,
 article .container .section-4 .blocks-main-container,
@@ -540,11 +566,19 @@ article .container .section-5 .blocks-main-container .timeline-wrap .blocks-seco
   margin-left: -3rem;
   margin-right: 20px;
 }
+article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-ico svg,
+article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-ico svg,
+article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-ico svg {
+  stroke-width: 3px;
+}
 article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header,
 article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header,
 article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header {
   font-family: "Poppins", sans-serif;
   margin-bottom: 0.8rem;
+  border-bottom: 2px rgba(0, 0, 0, 0.321) solid;
+  width: 30%;
+  padding-bottom: 10px;
 }
 article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p,
 article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p,
@@ -562,7 +596,7 @@ article .container .section-4 .blocks-main-container .timeline-wrap .blocks-seco
 article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content h4 {
   margin-bottom: 8px;
   font-family: "Poppins", sans-serif;
-  color: rgb(255, 0, 119);
+  color: #f90c7d;
 }
 article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p,
 article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p,
@@ -591,4 +625,106 @@ article .container .section-4 h2,
 article .container .section-5 h2 {
   font-size: 2rem;
   letter-spacing: 3px;
+}
+
+.section-6 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #313131 url(../images/bg.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  padding-top: 26rem;
+  padding-bottom: 26rem;
+}
+.section-6 .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 21, 21, 0.7490196078);
+}
+.section-6 .overlay .header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 60%;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 3rem;
+}
+.section-6 .overlay .header h6 {
+  color: #f90c7d;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 0.15rem;
+}
+.section-6 .overlay .header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.section-6 .overlay .header p {
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 40rem;
+}
+.section-6 .overlay .swiper-container {
+  max-width: 45rem;
+  height: 25rem;
+}
+.section-6 .overlay .swiper-container .swiper {
+  width: 100%;
+  height: 25rem;
+}
+.section-6 .overlay .swiper-container .swiper .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide {
+  display: grid;
+  place-items: center;
+  background-color: rgba(245, 245, 245, 0.062);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 25px;
+  overflow: hidden;
+}
+.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text {
+  width: 90%;
+  text-align: center;
+}
+.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text p {
+  font-family: "Lora", serif;
+}
+.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-icon {
+  width: 8rem;
+  max-height: 9.2rem;
+  margin-bottom: 2rem;
+}
+.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-icon svg {
+  width: 100%;
 }/*# sourceMappingURL=Main.css.map */
