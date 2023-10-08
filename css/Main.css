@@ -132,7 +132,6 @@ header .layer .header-text {
   text-align: center;
   color: azure;
   line-height: 30px;
-  animation: slide-in-bottom 800ms cubic-bezier(0.315, 0.61, 0.455, 1) both;
 }
 @keyframes slide-in-bottom {
   0% {
