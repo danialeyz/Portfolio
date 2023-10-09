@@ -115,8 +115,8 @@ header .layer {
   justify-content: center;
   align-items: center;
   z-index: 10;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: #111111;
   opacity: 0.85;
 }
@@ -132,6 +132,7 @@ header .layer .header-text {
   text-align: center;
   color: azure;
   line-height: 30px;
+  animation: slide-in-bottom 800ms cubic-bezier(0.315, 0.61, 0.455, 1) both;
 }
 @keyframes slide-in-bottom {
   0% {
@@ -151,7 +152,7 @@ header .layer .header-text .logo {
   margin-bottom: 2rem;
 }
 header .layer .header-text .logo img {
-  max-width: 19rem;
+  max-width: 17rem;
 }
 header .layer .header-text h1 {
   overflow: hidden;
@@ -271,6 +272,7 @@ article .container .section-1 {
   display: grid;
   place-items: center;
   width: 100%;
+  margin-bottom: 2rem;
 }
 @keyframes slide-in-left {
   0% {
@@ -324,7 +326,7 @@ article .container .section-1 .section-1-content p {
   margin-right: 6rem;
   text-align: left;
   font-family: "Lora", serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: #888888;
   font-weight: 100;
@@ -559,6 +561,7 @@ article .container .section-5 .header-intro h5 {
   line-height: 1.875;
   margin-bottom: 0.3rem;
   letter-spacing: 0.2rem;
+  text-decoration: none;
 }
 article .container .section-3 .header-intro h1,
 article .container .section-4 .header-intro h1,
@@ -698,6 +701,10 @@ article .container .section-5 h2 {
   font-size: 2rem;
   letter-spacing: 3px;
 }
+article .container .section-4 span,
+article .container .section-5 span {
+  color: #f90c7d;
+}
 article .container .section-5-buttons {
   display: flex;
   flex-direction: column;
@@ -800,11 +807,11 @@ article .container .section-5-buttons div a:nth-child(2) {
 }
 .section-6 .overlay .swiper-container {
   max-width: 45rem;
-  height: 25rem;
+  height: 29rem;
 }
 .section-6 .overlay .swiper-container .swiper {
   width: 100%;
-  height: 25rem;
+  height: 29rem;
 }
 .section-6 .overlay .swiper-container .swiper .swiper-wrapper {
   display: flex;
@@ -837,7 +844,8 @@ article .container .section-5-buttons div a:nth-child(2) {
   margin-bottom: 20px;
 }
 .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text p {
-  font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-icon {
   width: 8rem;
@@ -1206,9 +1214,6 @@ footer footer span {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
     margin-bottom: 20px;
-  }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text p {
-    font-family: "Lora", serif;
   }
   .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-icon {
     width: 8rem;
@@ -1580,7 +1585,6 @@ footer footer span {
   }
   .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text p {
     font-size: 0.9rem;
-    font-family: "Lora", serif;
   }
   .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-icon {
     width: 8rem;
