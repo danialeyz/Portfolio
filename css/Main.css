@@ -738,6 +738,16 @@ article .container .section-5-buttons div button {
 article .container .section-5-buttons div a {
   border-radius: 5px;
   transition-duration: 300ms;
+  padding: 9px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
 }
 article .container .section-5-buttons div a:nth-child(1) {
   background-color: orangered;
@@ -805,55 +815,108 @@ article .container .section-5-buttons div a:nth-child(2) {
   font-weight: 300;
   max-width: 40rem;
 }
-.section-6 .overlay .swiper-container {
-  max-width: 45rem;
-  height: 29rem;
-}
-.section-6 .overlay .swiper-container .swiper {
-  width: 100%;
-  height: 29rem;
-}
-.section-6 .overlay .swiper-container .swiper .swiper-wrapper {
+.section-6 .overlay .section-6-cards-container-1 {
+  width: 100vw;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  height: 28rem;
+  margin-top: 3rem;
 }
-.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide {
+.section-6 .overlay .section-6-cards-container-1 .scroll-button-left,
+.section-6 .overlay .section-6-cards-container-1 .scroll-button-right {
+  position: relative;
+  min-width: 4rem;
+  min-height: 4rem;
+  border-radius: 100%;
+  border: none;
   display: grid;
   place-items: center;
+  background-color: rgba(49, 49, 49, 0.5411764706);
+  cursor: pointer;
+}
+.section-6 .overlay .section-6-cards-container-1 .scroll-button-left svg,
+.section-6 .overlay .section-6-cards-container-1 .scroll-button-right svg {
+  color: #f90c7d;
+  fill: #f90c7d;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+.section-6 .overlay .section-6-cards-container-1 .scroll-button-left:active,
+.section-6 .overlay .section-6-cards-container-1 .scroll-button-right:active {
+  background-color: rgba(99, 99, 99, 0.6862745098);
+}
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 {
+  scroll-behavior: smooth;
+  transition: 350ms ease-in-out;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 75vw;
+  min-height: 100%;
+  overflow-x: scroll;
+  gap: 1.5rem;
+  padding-inline: 2rem;
+  margin-inline: 1rem;
+}
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 30rem;
   background-color: rgba(245, 245, 245, 0.062);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 25px;
   overflow: hidden;
+  padding-block: 3rem;
+  height: 22rem;
 }
-.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 75%;
-}
-.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text {
+  overflow: hidden;
+  margin-bottom: auto;
+  margin-top: auto;
   width: 90%;
   text-align: center;
 }
-.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text h4 {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text h4 {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
-.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text p {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text p {
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
-.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-icon {
-  width: 8rem;
-  max-height: 9.2rem;
-  margin-bottom: 2rem;
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon {
+  width: 9rem;
+  justify-self: flex-start;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
 }
-.section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-icon svg {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon svg {
   width: 100%;
+}
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(1) .cards-icon {
+  margin-top: 1rem;
+}
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon {
+  margin-bottom: 1rem;
+}
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon svg {
+  width: 84%;
+}
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon {
+  margin-bottom: 1rem;
+  width: 10rem;
+}
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon svg {
+  width: 90%;
+}
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(4) .cards-icon svg {
+  width: 90%;
 }
 
 footer {
@@ -1164,63 +1227,109 @@ footer footer span {
     width: 65%;
     overflow: hidden;
   }
+  .section-6 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #313131 url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    padding-top: 22rem;
+    padding-bottom: 30rem;
+  }
+  .section-6 .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(20, 20, 20);
+    background: linear-gradient(0deg, rgb(20, 20, 20) 0%, rgba(20, 20, 20, 0.8869922969) 66%, rgba(20, 20, 20, 0.7889530812) 100%);
+  }
   .section-6 .overlay .header {
-    max-width: 85% !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 60%;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 3rem;
   }
   .section-6 .overlay .header h6 {
-    font-size: 1.2rem;
+    color: #f90c7d;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 0.15rem;
   }
   .section-6 .overlay .header h1 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    max-width: 80vw;
   }
   .section-6 .overlay .header p {
     font-size: 0.9rem;
-    max-width: 90%;
+    font-weight: 300;
+    max-width: 40rem;
   }
-  .section-6 .overlay .swiper-container {
-    max-width: 100vw;
-    height: 28rem;
+  .section-6 .overlay .section-6-cards-container-1 {
+    margin-top: 2rem !important;
   }
-  .section-6 .overlay .swiper-container .swiper {
-    width: 98% !important;
-    height: 28rem;
+  .section-6 .overlay .section-6-cards-container-1 .scroll-button-left,
+  .section-6 .overlay .section-6-cards-container-1 .scroll-button-right {
+    display: none !important;
   }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 {
+    width: 100vw !important;
+    min-height: 100% !important;
+    gap: 0.5rem !important;
+    margin-inline: 0.5rem !important;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card {
+    min-width: 25rem !important;
+    border-radius: 30px !important;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text h4 {
+    font-size: 1.2rem;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text p {
+    font-size: 0.9rem;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon {
+    width: 7rem;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon svg {
     width: 100%;
   }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide {
-    display: grid;
-    place-items: center;
-    background-color: rgba(245, 245, 245, 0.062);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 25px;
-    overflow: hidden;
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(1) .cards-icon {
+    margin-top: 1rem;
   }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 75%;
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon {
+    margin-bottom: 1rem;
   }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text {
-    width: 90%;
-    text-align: center;
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon svg {
+    width: 94%;
   }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text h4 {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.6rem;
-    margin-bottom: 20px;
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon {
+    margin-bottom: 1rem;
+    width: 10rem;
   }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-icon {
-    width: 8rem;
-    max-height: 9.2rem;
-    margin-bottom: 2rem;
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon svg {
+    width: 80%;
   }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-icon svg {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(4) .cards-icon {
+    margin-top: 1rem;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(4) .cards-icon svg {
     width: 100%;
   }
   footer {
@@ -1297,7 +1406,7 @@ footer footer span {
 }
 @media screen and (max-width: 485px) {
   nav {
-    padding: 5px;
+    padding: 2px;
   }
   a {
     cursor: pointer;
@@ -1328,9 +1437,10 @@ footer footer span {
     margin-bottom: 10px;
   }
   header .layer .header-text h6 {
-    font-size: 0.45rem;
+    font-size: 0.6rem;
     line-height: 2rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
+    max-width: 90%;
   }
   header .layer .header-text a .header-button {
     margin-top: 20px;
@@ -1346,12 +1456,13 @@ footer footer span {
     padding-inline: 10px;
   }
   .section-1 h6 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .section-1 h2 {
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
     line-height: 1 !important;
     margin-bottom: 20px !important;
+    text-align: center;
   }
   .section-1 .section-1-content {
     padding-bottom: 2rem;
@@ -1362,14 +1473,14 @@ footer footer span {
   .section-1 .section-1-content .profile-image {
     margin-left: 0px !important;
     background-size: 120px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .section-1 .section-1-content p {
     margin-right: 0rem !important;
     text-align: center !important;
-    font-size: 0.8rem !important;
-    max-width: 98% !important;
+    font-size: 0.7rem !important;
+    max-width: 98vw !important;
   }
   .section-2 {
     width: 100% !important;
@@ -1410,10 +1521,25 @@ footer footer span {
   .section-2-profile ul p {
     font-size: 0.8rem !important;
   }
+  .skill-bars .progress-container {
+    width: 80%;
+  }
+  .skill-bars .progress-container .progress {
+    border-radius: 0px 0px 5px 5px;
+  }
+  .skill-bars .progress-container .progress span {
+    font-size: 0.7rem !important;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  .skill-bars strong {
+    font-size: 0.8rem !important;
+  }
   .section-2-buttons {
     margin-top: 20px !important;
     flex-direction: column !important;
     row-gap: 1rem !important;
+    max-width: 80vw !important;
   }
   .section-3,
   .section-4,
@@ -1424,25 +1550,29 @@ footer footer span {
   .section-3 .header-intro,
   .section-4 .header-intro,
   .section-5 .header-intro {
-    max-width: 100% !important;
+    width: 90vw !important;
+  }
+  .section-3 .header-intro h5,
+  .section-4 .header-intro h5,
+  .section-5 .header-intro h5 {
+    font-size: 1rem !important;
   }
   .section-3 .header-intro h1,
   .section-4 .header-intro h1,
   .section-5 .header-intro h1 {
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
     font-weight: 600 !important;
     margin-bottom: 1rem !important;
   }
   .section-3 .header-intro p,
   .section-4 .header-intro p,
   .section-5 .header-intro p {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
   }
   .section-3 .resume-header,
   .section-4 .resume-header,
   .section-5 .resume-header {
-    font-size: 1.1rem !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 1.2rem !important;
   }
   .section-3 .blocks-main-container,
   .section-4 .blocks-main-container,
@@ -1465,22 +1595,29 @@ footer footer span {
   .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header,
   .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header,
   .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header {
-    width: 60% !important;
+    width: 80% !important;
   }
   .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header h3,
   .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header h3,
   .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header h3 {
-    font-size: 1rem;
+    font-size: 0.9rem !important;
+    max-width: 80vw;
   }
   .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p,
   .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p,
   .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p {
-    font-size: 0.8rem;
+    font-size: 0.6rem !important;
+    max-width: 80vw;
   }
   .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content,
   .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content,
   .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content {
     width: 100% !important;
+  }
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content h4,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content h4,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content h4 {
+    margin-top: 0.7rem !important;
   }
   .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p,
   .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p,
@@ -1532,66 +1669,72 @@ footer footer span {
     width: 90%;
     overflow: hidden;
   }
+  .section-6 {
+    padding-top: 22rem;
+    padding-bottom: 25rem;
+  }
   .section-6 .overlay .header {
-    max-width: 85% !important;
-  }
-  .section-6 .overlay .header h6 {
-    font-size: 1.2rem;
-  }
-  .section-6 .overlay .header h1 {
-    font-size: 1.7rem;
-  }
-  .section-6 .overlay .header p {
-    font-size: 0.8rem;
-    max-width: 90%;
-  }
-  .section-6 .overlay .swiper-container {
-    max-width: 100vw;
-    height: 32rem;
-  }
-  .section-6 .overlay .swiper-container .swiper {
-    width: 98% !important;
-    height: 32rem;
-  }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-  }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide {
-    display: grid;
-    place-items: center;
-    background-color: rgba(245, 245, 245, 0.062);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 25px;
-    overflow: hidden;
-  }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 75%;
-  }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text {
-    width: 90%;
-    text-align: center;
-  }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text h4 {
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-text p {
-    font-size: 0.9rem;
-  }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-icon {
-    width: 8rem;
-    max-height: 9.2rem;
+    max-width: 100% !important;
     margin-bottom: 2rem;
   }
-  .section-6 .overlay .swiper-container .swiper .swiper-wrapper .swiper-slide .section-6-card .cards-icon svg {
+  .section-6 .overlay .header h6 {
+    margin-bottom: 0.15rem;
+  }
+  .section-6 .overlay .header h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  .section-6 .overlay .header p {
+    font-size: 0.6rem;
+    font-weight: 350;
+    max-width: 90%;
+  }
+  .section-6 .overlay .section-6-cards-container-1 {
+    margin-top: 1rem !important;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 {
+    width: 100vw !important;
+    min-height: 100% !important;
+    gap: 0.5rem !important;
+    margin-inline: 0rem !important;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card {
+    min-width: 18rem !important;
+    border-radius: 30px !important;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text h4 {
+    font-size: 0.95rem;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text p {
+    font-size: 0.8rem;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon {
+    width: 7rem;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon svg {
+    width: 100%;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(1) .cards-icon {
+    margin-top: 1rem;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon {
+    margin-bottom: 1rem;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon svg {
+    width: 94%;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon {
+    margin-bottom: 1rem;
+    width: 7rem;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon svg {
+    width: 100%;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(4) .cards-icon {
+    margin-top: 1rem;
+  }
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(4) .cards-icon svg {
     width: 100%;
   }
   footer {
@@ -1603,20 +1746,20 @@ footer footer span {
   }
   footer .footer-header h6 {
     color: #f90c7d;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 3px;
     margin-bottom: 0.15rem;
   }
   footer .footer-header h1 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 0.3rem;
+    margin-bottom: 1rem;
   }
   footer .footer-header p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 300;
-    max-width: 94%;
+    max-width: 96%;
   }
   footer .footer-container-items {
     margin-top: 3rem;
@@ -1664,6 +1807,7 @@ footer footer span {
   footer footer h6 {
     font-size: 0.4rem;
     font-weight: 400;
+    max-width: 80%;
   }
 }
 @media screen and (max-height: 700px) {
