@@ -119,9 +119,14 @@ header {
   overflow-y: hidden;
   display: table;
   position: relative;
+  top: 0px;
+  left: 0px;
   width: 100vw;
   height: 100vh;
   background: url(../images/intro-bg.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
 
