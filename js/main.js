@@ -3,18 +3,17 @@ const menuIcon = document.querySelector("#menu-icon");
 const menuItems = document.querySelector("#menu-items");
 const scrollToTopButton = document.querySelector("#scroll-top");
 const section6Cards = document.querySelector(".section-6-cards-container-1");
-
 let isOpen = false;
 
 // EVENT LISTENERS
 menuIcon.addEventListener("click", menuViewer);
 window.addEventListener("scroll", scrollButton);
 section6Cards.addEventListener("click", section6Scroll);
+menuItems.addEventListener("click", menuViewer);
 
 // for hide and unhide navigation menu
 function menuViewer() {
   isOpen = !isOpen;
-  console.log(isOpen);
   if (isOpen) {
     menuItems.style.display = "flex";
   } else if (isOpen == false) {

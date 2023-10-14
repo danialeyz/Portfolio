@@ -14,8 +14,8 @@ html {
   overflow-x: hidden;
   box-sizing: inherit;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 body {
@@ -53,7 +53,7 @@ nav div {
   flex-direction: row;
   align-items: center;
   -moz-column-gap: 1rem;
-  column-gap: 1rem;
+       column-gap: 1rem;
   font-size: larger;
   font-size: larger;
   letter-spacing: 3px;
@@ -108,9 +108,6 @@ header {
   width: 100vw;
   height: 100vh;
   background: url(../images/intro-bg.jpg) no-repeat center bottom;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;
   background-size: cover !important;
   background-attachment: fixed;
 }
@@ -232,7 +229,7 @@ header .layer .header-icons {
   align-items: center;
   flex-direction: row;
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
   position: absolute;
   width: 100%;
   left: 0;
@@ -313,7 +310,7 @@ article .container .section-1 .section-1-content {
   align-items: center;
   justify-content: flex-start;
   -moz-column-gap: 2rem;
-  column-gap: 2rem;
+       column-gap: 2rem;
 }
 article .container .section-1 .section-1-content .profile-image {
   margin-bottom: 20px;
@@ -402,66 +399,25 @@ article .container .section-2-skills .section-2-skills-graph ul li strong {
   font-weight: 400;
   margin-bottom: 10px;
 }
-article
-  .container
-  .section-2-skills
-  .section-2-skills-graph
-  ul
-  li
-  .progress-container {
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container {
   background-color: rgba(182, 182, 182, 0.7764705882);
   border-radius: 5px;
   width: 100%;
   height: 1rem;
 }
-article
-  .container
-  .section-2-skills
-  .section-2-skills-graph
-  ul
-  li
-  .progress-container
-  .percent80 {
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container .percent80 {
   --width: 80%;
 }
-article
-  .container
-  .section-2-skills
-  .section-2-skills-graph
-  ul
-  li
-  .progress-container
-  .percent85 {
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container .percent85 {
   --width: 85%;
 }
-article
-  .container
-  .section-2-skills
-  .section-2-skills-graph
-  ul
-  li
-  .progress-container
-  .percent90 {
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container .percent90 {
   --width: 88%;
 }
-article
-  .container
-  .section-2-skills
-  .section-2-skills-graph
-  ul
-  li
-  .progress-container
-  .percent95 {
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container .percent95 {
   --width: 92%;
 }
-article
-  .container
-  .section-2-skills
-  .section-2-skills-graph
-  ul
-  li
-  .progress-container
-  .progress {
+article .container .section-2-skills .section-2-skills-graph ul li .progress-container .progress {
   background: #313131;
   text-align: right;
   color: azure;
@@ -487,7 +443,7 @@ article .container .section-2-skills .section-2-skills-items div {
   align-items: center;
   flex-direction: row;
   -moz-column-gap: 10px;
-  column-gap: 10px;
+       column-gap: 10px;
   padding: 2px;
   padding-inline: 3px;
   text-align: center;
@@ -538,7 +494,7 @@ article .container .section-2-buttons {
   align-items: center;
   flex-direction: row;
   -moz-column-gap: 3rem;
-  column-gap: 3rem;
+       column-gap: 3rem;
 }
 article .container .section-2-buttons a {
   text-decoration: none;
@@ -551,7 +507,7 @@ article .container .section-2-buttons button {
   align-items: center;
   flex-direction: row;
   -moz-column-gap: 10px;
-  column-gap: 10px;
+       column-gap: 10px;
   text-align: center;
   border: solid 2px;
   height: 3rem;
@@ -656,24 +612,9 @@ article .container .section-5 .blocks-main-container .timeline-wrap {
   margin-top: 1.5rem;
   margin-bottom: 6rem;
 }
-article
-  .container
-  .section-3
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container,
-article
-  .container
-  .section-4
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container,
-article
-  .container
-  .section-5
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container {
+article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container,
+article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container,
+article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -683,53 +624,14 @@ article
   padding-left: 4rem;
   row-gap: 2.5rem;
 }
-article
-  .container
-  .section-3
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block,
-article
-  .container
-  .section-4
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block,
-article
-  .container
-  .section-5
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block {
+article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block,
+article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block,
+article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block {
   padding-bottom: 30px;
 }
-article
-  .container
-  .section-3
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-ico,
-article
-  .container
-  .section-4
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-ico,
-article
-  .container
-  .section-5
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-ico {
+article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-ico,
+article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-ico,
+article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-ico {
   position: absolute;
   display: grid;
   place-items: center;
@@ -741,179 +643,41 @@ article
   margin-left: -3rem;
   margin-right: 20px;
 }
-article
-  .container
-  .section-3
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-ico
-  svg,
-article
-  .container
-  .section-4
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-ico
-  svg,
-article
-  .container
-  .section-5
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-ico
-  svg {
+article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-ico svg,
+article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-ico svg,
+article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-ico svg {
   stroke-width: 3px;
 }
-article
-  .container
-  .section-3
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-header,
-article
-  .container
-  .section-4
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-header,
-article
-  .container
-  .section-5
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-header {
+article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header,
+article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header,
+article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header {
   font-family: "Poppins", sans-serif;
   margin-bottom: 0.8rem;
   border-bottom: 2px rgba(0, 0, 0, 0.321) solid;
   width: 30%;
   padding-bottom: 10px;
 }
-article
-  .container
-  .section-3
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-header
-  p,
-article
-  .container
-  .section-4
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-header
-  p,
-article
-  .container
-  .section-5
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-header
-  p {
+article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p,
+article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p,
+article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p {
   color: #6e6e6e;
 }
-article
-  .container
-  .section-3
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-content,
-article
-  .container
-  .section-4
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-content,
-article
-  .container
-  .section-5
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-content {
+article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content,
+article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content,
+article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content {
   font-family: "Lora", serif;
   width: 90%;
 }
-article
-  .container
-  .section-3
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-content
-  h4,
-article
-  .container
-  .section-4
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-content
-  h4,
-article
-  .container
-  .section-5
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-content
-  h4 {
+article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content h4,
+article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content h4,
+article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content h4 {
   margin-bottom: 8px;
   font-family: "Poppins", sans-serif;
   color: #f90c7d;
 }
-article
-  .container
-  .section-3
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-content
-  p,
-article
-  .container
-  .section-4
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-content
-  p,
-article
-  .container
-  .section-5
-  .blocks-main-container
-  .timeline-wrap
-  .blocks-second-container
-  .timeline-block
-  .timeline-content
-  p {
+article .container .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p,
+article .container .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p,
+article .container .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p {
   color: #6e6e6e;
   font-size: 1.1rem;
   line-height: 1.6rem;
@@ -960,7 +724,7 @@ article .container .section-5-buttons div {
   align-items: center;
   flex-direction: row;
   -moz-column-gap: 10px;
-  column-gap: 10px;
+       column-gap: 10px;
 }
 article .container .section-5-buttons div button {
   padding: 9px;
@@ -1023,12 +787,7 @@ article .container .section-5-buttons div a:nth-child(2) {
   width: 100%;
   height: 100%;
   background: rgb(20, 20, 20);
-  background: linear-gradient(
-    0deg,
-    rgb(20, 20, 20) 0%,
-    rgba(20, 20, 20, 0.8869922969) 66%,
-    rgba(20, 20, 20, 0.7889530812) 100%
-  );
+  background: linear-gradient(0deg, rgb(20, 20, 20) 0%, rgba(20, 20, 20, 0.8869922969) 66%, rgba(20, 20, 20, 0.7889530812) 100%);
 }
 .section-6 .overlay .header {
   position: relative;
@@ -1103,11 +862,7 @@ article .container .section-5-buttons div a:nth-child(2) {
   padding-inline: 2rem;
   margin-inline: 1rem;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1120,110 +875,49 @@ article .container .section-5-buttons div a:nth-child(2) {
   padding-block: 3rem;
   height: 22rem;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card
-  .cards-text {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text {
   overflow: hidden;
   margin-bottom: auto;
   margin-top: auto;
   width: 90%;
   text-align: center;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card
-  .cards-text
-  h4 {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text h4 {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card
-  .cards-text
-  p {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text p {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card
-  .cards-icon {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon {
   width: 9rem;
   justify-self: flex-start;
   overflow: hidden;
   display: grid;
   place-items: center;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card
-  .cards-icon
-  svg {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon svg {
   width: 100%;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card:nth-child(1)
-  .cards-icon {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(1) .cards-icon {
   margin-top: 1rem;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card:nth-child(2)
-  .cards-icon {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon {
   margin-bottom: 1rem;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card:nth-child(2)
-  .cards-icon
-  svg {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon svg {
   width: 84%;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card:nth-child(3)
-  .cards-icon {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon {
   margin-bottom: 1rem;
   width: 10rem;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card:nth-child(3)
-  .cards-icon
-  svg {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon svg {
   width: 90%;
 }
-.section-6
-  .overlay
-  .section-6-cards-container-1
-  .section-6-cards-container-2
-  .section-6-card:nth-child(4)
-  .cards-icon
-  svg {
+.section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(4) .cards-icon svg {
   width: 90%;
 }
 
@@ -1317,7 +1011,7 @@ footer footer {
   color: #f90c7d;
   font-family: "Poppins", sans-serif;
   -moz-column-gap: 5px;
-  column-gap: 5px;
+       column-gap: 5px;
 }
 footer footer span {
   color: whitesmoke;
@@ -1465,113 +1159,29 @@ footer footer span {
     width: 100%;
     row-gap: 2.5rem;
   }
-  .section-3
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header,
-  .section-4
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header,
-  .section-5
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header {
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header {
     width: 60% !important;
   }
-  .section-3
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    h3,
-  .section-4
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    h3,
-  .section-5
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    h3 {
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header h3,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header h3,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header h3 {
     font-size: 1.2rem;
   }
-  .section-3
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    p,
-  .section-4
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    p,
-  .section-5
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    p {
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p {
     font-size: 0.8rem;
   }
-  .section-3
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content,
-  .section-4
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content,
-  .section-5
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content {
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content {
     width: 100% !important;
   }
-  .section-3
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content
-    p,
-  .section-4
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content
-    p,
-  .section-5
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content
-    p {
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p {
     font-size: 1.05rem !important;
   }
   .section-3 .blocks-main-container .timeline-wrap::before,
@@ -1642,12 +1252,7 @@ footer footer span {
     width: 100%;
     height: 100%;
     background: rgb(20, 20, 20);
-    background: linear-gradient(
-      0deg,
-      rgb(20, 20, 20) 0%,
-      rgba(20, 20, 20, 0.8869922969) 66%,
-      rgba(20, 20, 20, 0.7889530812) 100%
-    );
+    background: linear-gradient(0deg, rgb(20, 20, 20) 0%, rgba(20, 20, 20, 0.8869922969) 66%, rgba(20, 20, 20, 0.7889530812) 100%);
   }
   .section-6 .overlay .header {
     position: relative;
@@ -1685,116 +1290,48 @@ footer footer span {
   .section-6 .overlay .section-6-cards-container-1 .scroll-button-right {
     display: none !important;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2 {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 {
     width: 100vw !important;
     min-height: 100% !important;
     gap: 0.5rem !important;
     margin-inline: 0.5rem !important;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card {
     min-width: 25rem !important;
     border-radius: 30px !important;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card
-    .cards-text
-    h4 {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text h4 {
     font-size: 1.2rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card
-    .cards-text
-    p {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text p {
     font-size: 0.9rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card
-    .cards-icon {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon {
     width: 7rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card
-    .cards-icon
-    svg {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon svg {
     width: 100%;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(1)
-    .cards-icon {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(1) .cards-icon {
     margin-top: 1rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(2)
-    .cards-icon {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon {
     margin-bottom: 1rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(2)
-    .cards-icon
-    svg {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon svg {
     width: 94%;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(3)
-    .cards-icon {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon {
     margin-bottom: 1rem;
     width: 10rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(3)
-    .cards-icon
-    svg {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon svg {
     width: 80%;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(4)
-    .cards-icon {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(4) .cards-icon {
     margin-top: 1rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(4)
-    .cards-icon
-    svg {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(4) .cards-icon svg {
     width: 100%;
   }
   footer {
@@ -2057,138 +1594,36 @@ footer footer span {
     width: 100%;
     row-gap: 2.5rem;
   }
-  .section-3
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header,
-  .section-4
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header,
-  .section-5
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header {
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header {
     width: 80% !important;
   }
-  .section-3
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    h3,
-  .section-4
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    h3,
-  .section-5
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    h3 {
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header h3,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header h3,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header h3 {
     font-size: 0.9rem !important;
     max-width: 80vw;
   }
-  .section-3
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    p,
-  .section-4
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    p,
-  .section-5
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-header
-    p {
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-header p {
     font-size: 0.6rem !important;
     max-width: 80vw;
   }
-  .section-3
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content,
-  .section-4
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content,
-  .section-5
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content {
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content {
     width: 100% !important;
   }
-  .section-3
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content
-    h4,
-  .section-4
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content
-    h4,
-  .section-5
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content
-    h4 {
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content h4,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content h4,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content h4 {
     margin-top: 0.7rem !important;
   }
-  .section-3
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content
-    p,
-  .section-4
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content
-    p,
-  .section-5
-    .blocks-main-container
-    .timeline-wrap
-    .blocks-second-container
-    .timeline-block
-    .timeline-content
-    p {
+  .section-3 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p,
+  .section-4 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p,
+  .section-5 .blocks-main-container .timeline-wrap .blocks-second-container .timeline-block .timeline-content p {
     font-size: 0.9rem !important;
   }
   .section-3 .blocks-main-container .timeline-wrap::before,
@@ -2260,116 +1695,48 @@ footer footer span {
   .section-6 .overlay .section-6-cards-container-1 {
     margin-top: 1rem !important;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2 {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 {
     width: 100vw !important;
     min-height: 100% !important;
     gap: 0.5rem !important;
     margin-inline: 0rem !important;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card {
     min-width: 18rem !important;
     border-radius: 30px !important;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card
-    .cards-text
-    h4 {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text h4 {
     font-size: 0.95rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card
-    .cards-text
-    p {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-text p {
     font-size: 0.8rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card
-    .cards-icon {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon {
     width: 7rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card
-    .cards-icon
-    svg {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card .cards-icon svg {
     width: 100%;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(1)
-    .cards-icon {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(1) .cards-icon {
     margin-top: 1rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(2)
-    .cards-icon {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon {
     margin-bottom: 1rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(2)
-    .cards-icon
-    svg {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(2) .cards-icon svg {
     width: 84%;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(3)
-    .cards-icon {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon {
     margin-bottom: 1rem;
     width: 7rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(3)
-    .cards-icon
-    svg {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(3) .cards-icon svg {
     width: 100%;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(4)
-    .cards-icon {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(4) .cards-icon {
     margin-top: 1rem;
   }
-  .section-6
-    .overlay
-    .section-6-cards-container-1
-    .section-6-cards-container-2
-    .section-6-card:nth-child(4)
-    .cards-icon
-    svg {
+  .section-6 .overlay .section-6-cards-container-1 .section-6-cards-container-2 .section-6-card:nth-child(4) .cards-icon svg {
     width: 100%;
   }
   footer {
@@ -2449,4 +1816,4 @@ footer footer span {
   header .header-text {
     margin-top: 120px;
   }
-} /*# sourceMappingURL=Main.css.map */
+}/*# sourceMappingURL=Main.css.map */
