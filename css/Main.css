@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap");
 :root {
   --swiper-theme-color: #f90c7d;
 }
@@ -13,15 +14,12 @@ html {
   padding: 0%;
   overflow-x: hidden;
   box-sizing: inherit;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 
 body {
   font-family: "Lora", serif;
   scroll-behavior: smooth;
-  background-color: #111111;
+  background-color: #ffffff;
   transition: 3ooms;
 }
 
@@ -134,17 +132,33 @@ header .layer .header-text {
   text-align: center;
   color: azure;
   line-height: 30px;
-  animation: slide-in-bottom 800ms cubic-bezier(0.315, 0.61, 0.455, 1) both;
 }
-@keyframes slide-in-bottom {
-  0% {
-    transform: translateY(170px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(-100px);
-    opacity: 1;
-  }
+header .layer .header-text .container {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+header .layer .header-text .text {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 3rem;
+  color: #f90c7d;
+}
+header .layer .header-text .text_hide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #141414;
+}
+header .layer .header-text .text_cursor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  border-left: 3.5px solid rgb(255, 255, 255);
 }
 header .layer .header-text .logo {
   display: grid;
@@ -237,8 +251,6 @@ header .layer .header-icons {
   font-size: 3.3rem;
   margin: 0;
   padding: 0;
-  animation: slide-in-bottom 800ms cubic-bezier(0.315, 0.61, 0.455, 1) both;
-  animation-delay: 400ms;
   text-decoration: none;
 }
 header .layer .header-icons a {
@@ -270,21 +282,10 @@ article .container {
 }
 article .container .section-1 {
   padding: 0%;
-  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   display: grid;
   place-items: center;
   width: 100%;
   margin-bottom: 2rem;
-}
-@keyframes slide-in-left {
-  0% {
-    transform: translateX(150px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 article .container .section-1 h6 {
   color: #f90c7d;
@@ -346,16 +347,6 @@ article .container .section-2 .section-2-content {
   align-items: flex-start;
   flex-direction: row;
 }
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 article .container .section-2 h6 {
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
@@ -382,7 +373,6 @@ article .container .section-2-skills {
   flex-direction: column;
   justify-content: flex-start;
   max-width: 45%;
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 article .container .section-2-skills .section-2-skills-graph ul {
   display: grid;
@@ -428,7 +418,6 @@ article .container .section-2-skills .section-2-skills-graph ul li .progress-con
   border-radius: 40px;
   height: 100%;
   width: var(--width);
-  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 article .container .section-2-skills .section-2-skills-items {
   width: 100%;
@@ -1020,6 +1009,35 @@ footer footer span {
 @media screen and (max-width: 768px) {
   header .layer .header-text {
     line-height: 20px;
+  }
+  header .layer .header-text .container {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  header .layer .header-text .text {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 2rem;
+    color: #f90c7d;
+  }
+  header .layer .header-text .text_hide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #141414;
+    width: 100%;
+    height: 5rem;
+  }
+  header .layer .header-text .text_cursor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    border-left: 3.5px solid rgb(255, 255, 255);
   }
   header .layer .header-text .logo {
     padding-right: 8rem;

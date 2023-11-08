@@ -12,6 +12,8 @@
     />
     <!-- Main css file -->
     <link rel="stylesheet" href="./css/Main.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Danial Eyvazi</title>
   </head>
   <body>
@@ -68,7 +70,15 @@
       <div class="layer">
         <div class="header-text">
           <div class="logo"><img src="./images/DE-logo.png" alt="" /></div>
-          <h5>< <span> HELLO WORLD </span> /></h5>
+
+          <div class="container">
+            <div class="text_hide"></div>
+            <!----------------------------->
+            <div class="text">< hello world /></div>
+            <!-------------------------------------->
+            <div class="text_cursor"></div>
+          </div>
+
           <h1>I'm Danial Eyvazi</h1>
           <h6>| FRONT END DEVELOPER | BLOCKCHAIN DEVELOPER |</h6>
           <a href="#section-1"
@@ -96,7 +106,13 @@
     <article>
       <div class="container">
         <!-- !============== SECTION 1 ================ -->
-        <section id="section-1" class="section-1">
+        <section
+          id="section-1"
+          class="section-1"
+          data-aos="zoom-in"
+          data-aos-delay="30"
+          data-aos-duration="700"
+        >
           <h6>ABOUT</h6>
           <h2>Let me introduce myself.</h2>
           <div class="section-1-content">
@@ -117,7 +133,14 @@
         <!-- !============== SECTION 2 ================ -->
         <section id="section-2" class="section-2">
           <div class="section-2-content">
-            <div class="section-2-profile">
+            <div
+              class="section-2-profile"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="400"
+              data-aos-duration="500"
+            >
               <h6>PROFILE</h6>
               <p>
                 Hi, I'm Danial Eyvazi, a passionate programmer born on 06th
@@ -148,7 +171,12 @@
                 </li>
               </ul>
             </div>
-            <div class="section-2-skills">
+            <div
+              class="section-2-skills"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div>
                 <h6>SKILLS</h6>
                 <p>
@@ -164,49 +192,63 @@
                 <ul class="skill-bars">
                   <li>
                     <div class="progress-container">
-                      <div class="progress percent95"><span>95%</span></div>
+                      <div class="progress percent95" data-aos="fade-right">
+                        <span>95%</span>
+                      </div>
                     </div>
                     <strong>HTML 5</strong>
                   </li>
 
                   <li>
                     <div class="progress-container">
-                      <div class="progress percent90"><span>90%</span></div>
+                      <div class="progress percent90" data-aos="fade-right">
+                        <span>90%</span>
+                      </div>
                     </div>
                     <strong>CSS 3</strong>
                   </li>
 
                   <li>
                     <div class="progress-container">
-                      <div class="progress percent85"><span>85%</span></div>
+                      <div class="progress percent85" data-aos="fade-right">
+                        <span>85%</span>
+                      </div>
                     </div>
                     <strong>Javascript</strong>
                   </li>
 
                   <li>
                     <div class="progress-container">
-                      <div class="progress percent80"><span>80%</span></div>
+                      <div class="progress percent80" data-aos="fade-right">
+                        <span>80%</span>
+                      </div>
                     </div>
                     <strong>SOLIDITY</strong>
                   </li>
 
                   <li>
                     <div class="progress-container">
-                      <div class="progress percent90"><span>90%</span></div>
+                      <div class="progress percent90" data-aos="fade-right">
+                        <span>90%</span>
+                      </div>
                     </div>
                     <strong>Tailwind CSS</strong>
                   </li>
 
                   <li>
                     <div class="progress-container">
-                      <div class="progress percent90"><span>90%</span></div>
+                      <div class="progress percent90" data-aos="fade-right">
+                        <span>90%</span>
+                      </div>
                     </div>
                     <strong>Bootstrap</strong>
                   </li>
 
                   <li>
                     <div class="progress-container">
-                      <div class="progress percent85"><span>85%</span></div>
+                      <div class="progress percent85" data-aos="fade-right">
+                        <span>85%</span>
+                      </div>
                     </div>
                     <strong>Version control system</strong>
                   </li>
@@ -261,7 +303,13 @@
         <!-- !============== SECTION 3 ================ -->
 
         <section id="section-3" class="section-3">
-          <div class="header-intro">
+          <div
+            class="header-intro"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
             <h5>Resume</h5>
             <h1>More of my credentials.</h1>
 
@@ -284,7 +332,14 @@
                 <div class="blocks-second-container">
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    class="section-2-profile"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -328,7 +383,13 @@
 
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -371,7 +432,13 @@
 
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -414,7 +481,13 @@
                   </div>
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -457,7 +530,13 @@
                   </div>
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -506,7 +585,13 @@
                   </div>
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -545,7 +630,13 @@
                   </div>
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -593,7 +684,12 @@
         <!-- !============== SECTION 4 ================ -->
         <section id="section-4" class="section-4">
           <div class="resume-timeline">
-            <div class="resume-header">
+            <div
+              class="resume-header"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-duration="700"
+            >
               <h2>SKILLS</h2>
             </div>
             <!-- /resume-header -->
@@ -603,7 +699,12 @@
                 <div class="blocks-second-container">
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="700"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -638,7 +739,12 @@
 
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="700"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -673,7 +779,12 @@
 
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="700"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -704,7 +815,12 @@
                   </div>
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="700"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -734,7 +850,12 @@
                     </div>
                   </div>
                   <!-- /timeline-block -->
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="700"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -778,7 +899,12 @@
         <section id="section-5" class="section-5">
           <div class="resume-timeline">
             <div class="resume-header">
-              <div class="header-intro">
+              <div
+                class="header-intro"
+                data-aos="fade-down"
+                data-aos-duration="700"
+                data-aos-delay="100"
+              >
                 <h5>PROJECTS</h5>
                 <h1>Here Is My Top Projects.</h1>
 
@@ -796,7 +922,12 @@
                 <div class="blocks-second-container">
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-down"
+                    data-aos-duration="700"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -839,7 +970,12 @@
                     </div>
                   </div>
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-down"
+                    data-aos-duration="700"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -887,7 +1023,12 @@
                   </div>
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-down"
+                    data-aos-duration="700"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -937,7 +1078,12 @@
 
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-down"
+                    data-aos-duration="700"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -984,7 +1130,12 @@
                   </div>
 
                   <!-- /timeline-block -->
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-down"
+                    data-aos-duration="700"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1021,7 +1172,12 @@
                   </div>
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-down"
+                    data-aos-duration="700"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1058,7 +1214,12 @@
                   </div>
                   <!-- /timeline-block -->
 
-                  <div class="timeline-block">
+                  <div
+                    class="timeline-block"
+                    data-aos="fade-down"
+                    data-aos-duration="700"
+                    data-aos-delay="100"
+                  >
                     <div class="timeline-ico">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1120,7 +1281,13 @@
     </article>
     <!-- !============== SECTION 6 ================ -->
 
-    <section id="section-6" class="section-6">
+    <section
+      id="section-6"
+      class="section-6"
+      data-aos="flip-down"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+    >
       <div class="overlay">
         <div class="header">
           <h6>SERVICE</h6>
@@ -1539,5 +1706,9 @@
 
     <!-- app js -->
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
