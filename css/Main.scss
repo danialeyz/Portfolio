@@ -41,6 +41,11 @@ body {
   display: none;
 }
 
+section,
+section div {
+  overflow: hidden;
+}
+
 // !============ MENU ===========
 nav {
   position: fixed;

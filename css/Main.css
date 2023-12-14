@@ -27,6 +27,11 @@ body {
   display: none;
 }
 
+section,
+section div {
+  overflow: hidden;
+}
+
 nav {
   position: fixed;
   z-index: 1000;
