@@ -492,6 +492,7 @@ article .container .section-2-buttons {
 }
 article .container .section-2-buttons a {
   text-decoration: none;
+  color: whitesmoke;
 }
 article .container .section-2-buttons button {
   min-width: 13rem;
