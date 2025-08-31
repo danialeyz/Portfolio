@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/Main.css" />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Danial Eyvazi</title>
+    <title data-i18n="title">Danial Eyvazi</title>
   </head>
   <body>
     <!-- !================== NAV ================ -->
@@ -38,13 +38,33 @@
       </div>
 
       <ul id="menu-items">
-        <a href="#section-1" id="menu-nav"><li>About</li></a>
-        <a href="#section-3" id="menu-nav"><li>Education</li></a>
-        <a href="#section-4" id="menu-nav"><li>Skills</li></a>
-        <a href="#section-5" id="menu-nav"><li>Projects</li></a>
-        <a href="#section-6" id="menu-nav"><li>Services</li></a>
-        <a href="#footer" id="menu-nav"><li>Contact</li></a>
+        <a href="#section-1" id="menu-nav"
+          ><li data-i18n="nav_about">About</li></a
+        >
+        <a href="#section-3" id="menu-nav"
+          ><li data-i18n="nav_education">Education</li></a
+        >
+        <a href="#section-4" id="menu-nav"
+          ><li data-i18n="nav_skills">Skills</li></a
+        >
+        <a href="#section-5" id="menu-nav"
+          ><li data-i18n="nav_projects">Projects</li></a
+        >
+        <a href="#section-6" id="menu-nav"
+          ><li data-i18n="nav_services">Services</li></a
+        >
+        <a href="#footer" id="menu-nav"
+          ><li data-i18n="nav_contact">Contact</li></a
+        >
       </ul>
+
+      <div class="language-switcher">
+        <div>
+          <button id="lang-en" class="lang-button">🇬🇧</button>
+          <button id="lang-de" class="lang-button">🇩🇪</button>
+        </div>
+        <p>LANGUAGE</p>
+      </div>
     </nav>
 
     <!-- Scroll top button -->
@@ -74,15 +94,23 @@
           <div class="container">
             <div class="text_hide"></div>
             <!----------------------------->
-            <div class="text">< hello world /></div>
+            <div class="text" data-i18n="header_hello_world">
+              < hello world />
+            </div>
             <!-------------------------------------->
             <div class="text_cursor"></div>
           </div>
 
-          <h1>I'm Danial Eyvazi</h1>
-          <h6>| FRONT END DEVELOPER | BLOCKCHAIN DEVELOPER |</h6>
+          <h1 data-i18n="header_name">I'm Danial Eyvazi</h1>
+          <h6 data-i18n="header_profession_frontend">
+            | FRONT END DEVELOPER |
+            <span data-i18n="header_profession_blockchain"
+              >BLOCKCHAIN DEVELOPER</span
+            >
+            |
+          </h6>
           <a href="#section-1"
-            ><button class="header-button">
+            ><button class="header-button" data-i18n="header_more_about_me">
               MORE ABOUT ME<svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -113,11 +141,11 @@
           data-aos-delay="30"
           data-aos-duration="700"
         >
-          <h6>ABOUT</h6>
-          <h2>Let me introduce myself.</h2>
+          <h6 data-i18n="about_heading">ABOUT</h6>
+          <h2 data-i18n="about_intro">Let me introduce myself.</h2>
           <div class="section-1-content">
             <div class="profile-image"></div>
-            <p>
+            <p data-i18n="about_description">
               I am determined to learn and grow in the field of web development.
               With a strong foundation in HTML, CSS, and JavaScript, I strive to
               produce high-quality code and deliver engaging user experiences. A
@@ -141,8 +169,8 @@
               data-aos-delay="400"
               data-aos-duration="500"
             >
-              <h6>PROFILE</h6>
-              <p>
+              <h6 data-i18n="profile_heading">PROFILE</h6>
+              <p data-i18n="profile_description">
                 Hi, I'm Danial Eyvazi, a passionate programmer born on 06th
                 march 2002 in Tehran . I have studied for 12 years in school and
                 I'm dedicated to continuous learning and growth in the tech
@@ -150,24 +178,38 @@
               </p>
               <ul class="section-2-infolist">
                 <li>
-                  <label for="name">FULLNAME :</label>
-                  <p>Danial Eyvazi</p>
+                  <label for="name" data-i18n="profile_fullname_label"
+                    >FULLNAME :</label
+                  >
+                  <p data-i18n="profile_fullname_value">Danial Eyvazi</p>
                 </li>
                 <li>
-                  <label for="birth">BIRTH DATE :</label>
-                  <p>March 06 , 2002</p>
+                  <label for="birth" data-i18n="profile_birth_date_label"
+                    >BIRTH DATE :</label
+                  >
+                  <p data-i18n="profile_birth_date_value">March 06 , 2002</p>
                 </li>
                 <li>
-                  <label for="job">Profession :</label>
-                  <p>frontend | smart contract Development</p>
+                  <label for="job" data-i18n="profile_profession_label"
+                    >Profession :</label
+                  >
+                  <p data-i18n="profile_profession_value">
+                    frontend | smart contract Development
+                  </p>
                 </li>
                 <li>
-                  <label for="e-mail">E-MAIL :</label>
-                  <p>Danialeyvaziiii@gamail.com</p>
+                  <label for="e-mail" data-i18n="profile_email_label"
+                    >E-MAIL :</label
+                  >
+                  <p data-i18n="profile_email_value">
+                    Danialeyvaziiii@gamail.com
+                  </p>
                 </li>
                 <li>
-                  <label for="number">Phone Number :</label>
-                  <p>+989363789203</p>
+                  <label for="number" data-i18n="profile_phone_label"
+                    >Phone Number :</label
+                  >
+                  <p data-i18n="profile_phone_value">+989363789203</p>
                 </li>
               </ul>
             </div>
@@ -176,10 +218,12 @@
               data-aos="fade-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
+              data-aos-delay="400"
+              data-aos-duration="500"
             >
               <div>
-                <h6>SKILLS</h6>
-                <p>
+                <h6 data-i18n="skills_heading">SKILLS</h6>
+                <p data-i18n="skills_description">
                   Innovative and user-friendly web developer with 1.5 years of
                   experience in HTML, CSS, and JavaScript. Quick learner and
                   collaborative team player. Passionate about creating dynamic
@@ -196,7 +240,7 @@
                         <span>95%</span>
                       </div>
                     </div>
-                    <strong>HTML 5</strong>
+                    <strong data-i18n="skill_html5">HTML 5</strong>
                   </li>
 
                   <li>
@@ -205,7 +249,7 @@
                         <span>90%</span>
                       </div>
                     </div>
-                    <strong>CSS 3</strong>
+                    <strong data-i18n="skill_css3">CSS 3</strong>
                   </li>
 
                   <li>
@@ -214,7 +258,7 @@
                         <span>85%</span>
                       </div>
                     </div>
-                    <strong>Javascript</strong>
+                    <strong data-i18n="skill_javascript">Javascript</strong>
                   </li>
 
                   <li>
@@ -223,7 +267,7 @@
                         <span>80%</span>
                       </div>
                     </div>
-                    <strong>SOLIDITY</strong>
+                    <strong data-i18n="skill_solidity">SOLIDITY</strong>
                   </li>
 
                   <li>
@@ -232,7 +276,7 @@
                         <span>90%</span>
                       </div>
                     </div>
-                    <strong>Tailwind CSS</strong>
+                    <strong data-i18n="skill_tailwind_css">Tailwind CSS</strong>
                   </li>
 
                   <li>
@@ -241,7 +285,7 @@
                         <span>90%</span>
                       </div>
                     </div>
-                    <strong>Bootstrap</strong>
+                    <strong data-i18n="skill_bootstrap">Bootstrap</strong>
                   </li>
 
                   <li>
@@ -250,13 +294,15 @@
                         <span>85%</span>
                       </div>
                     </div>
-                    <strong>Version control system</strong>
+                    <strong data-i18n="skill_version_control_system"
+                      >Version control system</strong
+                    >
                   </li>
                 </ul>
               </div>
-              <p>I'm Also Learning :</p>
+              <p data-i18n="skills_learning_intro">I'm Also Learning :</p>
               <div class="section-2-skills-items">
-                <div>
+                <div data-i18n="skill_react">
                   REACT
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -271,8 +317,8 @@
                     ></path>
                   </svg>
                 </div>
-                <div>REDUX</div>
-                <div>
+                <div data-i18n="skill_redux">REDUX</div>
+                <div data-i18n="skill_nextjs">
                   NEXTJS
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -288,16 +334,25 @@
                     ></path>
                   </svg>
                 </div>
-                <div>WEB3 JS</div>
-                <div>MUI</div>
-                <div>PWA</div>
+                <div data-i18n="skill_web3js">WEB3 JS</div>
+                <div data-i18n="skill_mui">MUI</div>
+                <div data-i18n="skill_pwa">PWA</div>
               </div>
             </div>
           </div>
           <div class="section-2-buttons">
-            <a href="#footer"><button type="button">HIRE ME</button></a>
+            <a href="#footer"
+              ><button type="button" data-i18n="button_hire_me">
+                HIRE ME
+              </button></a
+            >
             <button type="button">
-              <a href="./images/RESUME 3 final.pdf">DOWNLOAD CV</a>
+              <a
+                href="/images/Resume.pdf"
+                download="/images/Resume.pdf"
+                data-i18n="button_download_cv"
+                >DOWNLOAD CV</a
+              >
             </button>
           </div>
         </section>
@@ -312,10 +367,10 @@
             data-aos-duration="800"
             data-aos-delay="200"
           >
-            <h5>Resume</h5>
-            <h1>More of my credentials.</h1>
+            <h5 data-i18n="resume_heading">Resume</h5>
+            <h1 data-i18n="resume_intro_title">More of my credentials.</h1>
 
-            <p class="text-intro">
+            <p class="text-intro" data-i18n="resume_intro_text">
               With a track record of success and expertise in learning Web
               development , I am confident that my skills and accomplishments
               will captivate your interest. Discover how my experience aligns
@@ -325,7 +380,7 @@
 
           <div class="resume-timeline">
             <div class="resume-header">
-              <h2>Education</h2>
+              <h2 data-i18n="education_heading">Education</h2>
             </div>
             <!-- /resume-header -->
 
@@ -361,8 +416,62 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Introduction To Web Development</h3>
-                      <p>META</p>
+                      <h3 data-i18n="edu_web_uni_title">
+                        Bachelor of Computer science
+                      </h3>
+                      <p data-i18n="edu_web_uni_org">Constructor University</p>
+                    </div>
+
+                    <div class="timeline-content">
+                      <a target="_blank">
+                        <h4 data-i18n="edu_web_uni_certificate">
+                          Bremen, Gremany
+                        </h4></a
+                      >
+                      <p data-i18n="edu_web_uni_description">
+                        Currently pursuing a Bachelor’s degree in Computer
+                        Science at Constructor University, Bremen, focusing on
+                        programming, algorithms, data structures, software
+                        development, and computer systems. Gaining practical
+                        experience through coursework and projects while
+                        developing strong analytical and problem-solving skills
+                        for future technology challenges.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /timeline-block -->
+
+                  <div
+                    class="timeline-block"
+                    class="section-2-profile"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-delay="100"
+                  >
+                    <div class="timeline-ico">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-mortarboard-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"
+                        />
+                        <path
+                          d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"
+                        />
+                      </svg>
+                    </div>
+
+                    <div class="timeline-header">
+                      <h3 data-i18n="edu_web_dev_title">
+                        Introduction To Web Development
+                      </h3>
+                      <p data-i18n="edu_web_dev_org">META</p>
                     </div>
 
                     <div class="timeline-content">
@@ -370,9 +479,11 @@
                         href="https://www.coursera.org/account/accomplishments/verify/TJADF3WDGLFK"
                         target="_blank"
                       >
-                        <h4>Click to see Certificate</h4></a
+                        <h4 data-i18n="edu_web_dev_certificate">
+                          Click to see Certificate
+                        </h4></a
                       >
-                      <p>
+                      <p data-i18n="edu_web_dev_description">
                         Meta Introduction to Web Development course offers the
                         advantage of a comprehensive curriculum, expert
                         instruction, and hands-on projects, enabling learners to
@@ -411,8 +522,10 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>HTML and CSS In Depth</h3>
-                      <p>META</p>
+                      <h3 data-i18n="edu_html_css_title">
+                        HTML and CSS In Depth
+                      </h3>
+                      <p data-i18n="edu_html_css_org">META</p>
                     </div>
 
                     <div class="timeline-content">
@@ -420,9 +533,11 @@
                         href="https://www.coursera.org/account/accomplishments/verify/ADKF4FFEGVRU"
                         target="_blank"
                       >
-                        <h4>Click to see Certificate</h4></a
+                        <h4 data-i18n="edu_html_css_certificate">
+                          Click to see Certificate
+                        </h4></a
                       >
-                      <p>
+                      <p data-i18n="edu_html_css_description">
                         Meta HTML and CSS In-Depth course provides the advantage
                         of in depth instruction, practical exercises, and
                         real-world projects, empowering learners to master the
@@ -460,8 +575,10 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Programming with JAVASCRIPT</h3>
-                      <p>META</p>
+                      <h3 data-i18n="edu_javascript_title">
+                        Programming with JAVASCRIPT
+                      </h3>
+                      <p data-i18n="edu_javascript_org">META</p>
                     </div>
 
                     <div class="timeline-content">
@@ -469,9 +586,11 @@
                         href="https://www.coursera.org/account/accomplishments/verify/J9HBB42UK8JG"
                         target="_blank"
                       >
-                        <h4>Click to see Certificate</h4></a
+                        <h4 data-i18n="edu_javascript_certificate">
+                          Click to see Certificate
+                        </h4></a
                       >
-                      <p>
+                      <p data-i18n="edu_javascript_description">
                         In Coursera's Meta Programming with JavaScript course, I
                         have leaned acquire a range of valuable skills,
                         including advanced JavaScript programming techniques,
@@ -509,8 +628,8 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Version control Systems</h3>
-                      <p>META</p>
+                      <h3 data-i18n="edu_vcs_title">Version control Systems</h3>
+                      <p data-i18n="edu_vcs_org">META</p>
                     </div>
 
                     <div class="timeline-content">
@@ -518,9 +637,11 @@
                         href="https://www.coursera.org/account/accomplishments/verify/8BFG7CF6SJCQ"
                         target="_blank"
                       >
-                        <h4>Click to see Certificate</h4></a
+                        <h4 data-i18n="edu_vcs_certificate">
+                          Click to see Certificate
+                        </h4></a
                       >
-                      <p>
+                      <p data-i18n="edu_vcs_description">
                         In Coursera's Meta Version Control System course, I have
                         learned essential skills in version control systems such
                         as Git - Github - GIt bash. I know to how to effectively
@@ -559,8 +680,8 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>UI/UX principles</h3>
-                      <p>META</p>
+                      <h3 data-i18n="edu_ui_ux_title">UI/UX principles</h3>
+                      <p data-i18n="edu_ui_ux_org">META</p>
                     </div>
 
                     <div class="timeline-content">
@@ -568,18 +689,20 @@
                         href="https://www.coursera.org/account/accomplishments/verify/HNQZYB243BLA"
                         target="_blank"
                       >
-                        <h4>Click to see Certificate</h4></a
+                        <h4 data-i18n="edu_ui_ux_certificate">
+                          Click to see Certificate
+                        </h4></a
                       >
-                      <p>
+                      <p data-i18n="edu_ui_ux_description">
                         Skills i gained : <br />
-                        • Design digital products that create value and solve a
+                        - Design digital products that create value and solve a
                         user's problems in meaningful ways. <br />
-                        • Recognize what constitutes successful UX UI and
+                        - Recognize what constitutes successful UX UI and
                         evaluate existing interfaces for design consistency and
                         quality.
 
                         <br />
-                        •  Create, share and test your UX UI designs .
+                        -  Create, share and test your UX UI designs .
                       </p>
                     </div>
                   </div>
@@ -613,8 +736,12 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Blockchain Basics</h3>
-                      <p>University at Bufallo</p>
+                      <h3 data-i18n="edu_blockchain_basics_title">
+                        Blockchain Basics
+                      </h3>
+                      <p data-i18n="edu_blockchain_basics_org">
+                        University at Bufallo
+                      </p>
                     </div>
 
                     <div class="timeline-content">
@@ -622,9 +749,11 @@
                         href="https://www.coursera.org/account/accomplishments/verify/NE7XH9WLANJR"
                         target="_blank"
                       >
-                        <h4>Click to see Certificate</h4></a
+                        <h4 data-i18n="edu_blockchain_basics_certificate">
+                          Click to see Certificate
+                        </h4></a
                       >
-                      <p>
+                      <p data-i18n="edu_blockchain_basics_description">
                         Blochchain , Cryptography , Protocols Working with
                         Virtual machine in Ubunto , Bitcoin .
                       </p>
@@ -660,8 +789,12 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Smart Contract development</h3>
-                      <p>University at Bufallo</p>
+                      <h3 data-i18n="edu_smart_contract_dev_title">
+                        Smart Contract development
+                      </h3>
+                      <p data-i18n="edu_smart_contract_dev_org">
+                        University at Bufallo
+                      </p>
                     </div>
 
                     <div class="timeline-content">
@@ -669,9 +802,11 @@
                         href="https://www.coursera.org/account/accomplishments/verify/WEDSHTQNPCDT"
                         target="_blank"
                       >
-                        <h4>Click to see Certificate</h4></a
+                        <h4 data-i18n="edu_smart_contract_dev_certificate">
+                          Click to see Certificate
+                        </h4></a
                       >
-                      <p>
+                      <p data-i18n="edu_smart_contract_dev_description">
                         Designing , Developing , Optimizing Smart Contracts with
                         real World usage (auction project) on Remix IDE and full
                         Solidity , Openzipplin , ... basics .
@@ -707,17 +842,19 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>CS50 (Introduction To Computer Science)</h3>
-                      <p>Harvard University</p>
+                      <h3 data-i18n="edu_cs50_title">
+                        CS50 (Introduction To Computer Science)
+                      </h3>
+                      <p data-i18n="edu_cs50_org">Harvard University</p>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>
+                      <h4 data-i18n="edu_cs50_certificate_note">
                         I dont have this course's certificate because i'm not
                         able to pay the certificate cost because of living in
                         iran 🙁
                       </h4>
-                      <p>
+                      <p data-i18n="edu_cs50_description">
                         This is CS50x , Harvard University's introduction to the
                         intellectual enterprises of computer science and the art
                         of programming for majors and non-majors alike, with or
@@ -762,13 +899,19 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Alidity Web development + Solidity programming</h3>
-                      <p>@Alidity & @Bitbod (Instagram)</p>
+                      <h3 data-i18n="edu_alidity_bootcamp_title">
+                        Alidity Web development + Solidity programming
+                      </h3>
+                      <p data-i18n="edu_alidity_bootcamp_org">
+                        @Alidity & @Bitbod (Instagram)
+                      </p>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>Private Bootcamp</h4>
-                      <p>
+                      <h4 data-i18n="edu_alidity_bootcamp_type">
+                        Private Bootcamp
+                      </h4>
+                      <p data-i18n="edu_alidity_bootcamp_description">
                         It was an one year web development (HTML , CSS ,
                         Bootstrap , JS , GIT ) + Smart contract (blockchain
                         basis , Smart Contract development (Solidity), Remix
@@ -807,13 +950,17 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Many Other online Courses</h3>
+                      <h3 data-i18n="edu_other_courses_title">
+                        Many Other online Courses
+                      </h3>
                       <p></p>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>Without Certificate</h4>
-                      <p>
+                      <h4 data-i18n="edu_other_courses_certificate_note">
+                        Without Certificate
+                      </h4>
+                      <p data-i18n="edu_other_courses_description">
                         I have also doe many online Bootcamps and course which
                         has no certificate but i have learned alot from them
                         such as React JS , next js , Tailwind CSS , Sass courses
@@ -841,7 +988,7 @@
               data-aos-anchor-placement="bottom-bottom"
               data-aos-duration="700"
             >
-              <h2>SKILLS</h2>
+              <h2 data-i18n="skills_section_heading">SKILLS</h2>
             </div>
             <!-- /resume-header -->
 
@@ -872,12 +1019,16 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Good in UI building</h3>
+                      <h3 data-i18n="skill_ui_building_title">
+                        Good in UI building
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>Sass , CSS3 , Bootstrap , Tailwind css</h4>
-                      <p>
+                      <h4 data-i18n="skill_ui_building_tech">
+                        Sass , CSS3 , Bootstrap , Tailwind css
+                      </h4>
+                      <p data-i18n="skill_ui_building_description">
                         Highly skilled UI Developer with expertise in building
                         user interfaces and proficiency in various UI building
                         frameworks. Committed to delivering visually appealing
@@ -912,12 +1063,16 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Javascript Knowledge</h3>
+                      <h3 data-i18n="skill_javascript_knowledge_title">
+                        Javascript Knowledge
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>ES6 , Vanilla JS , OOP , ...</h4>
-                      <p>
+                      <h4 data-i18n="skill_javascript_knowledge_tech">
+                        ES6 , Vanilla JS , OOP , ...
+                      </h4>
+                      <p data-i18n="skill_javascript_knowledge_description">
                         High intermediate Javascript ( OOP , Test ( JEST ) , DOM
                         , AJAX , ES6 , CRUD , SPA with vanilla JS , … ). I can
                         almost handle every task about building usefull
@@ -952,12 +1107,16 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Version Control</h3>
+                      <h3 data-i18n="skill_version_control_title">
+                        Version Control
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>GIT , Github , Git bash , Mac OS terminal</h4>
-                      <p>
+                      <h4 data-i18n="skill_version_control_tech">
+                        GIT , Github , Git bash , Mac OS terminal
+                      </h4>
+                      <p data-i18n="skill_version_control_description">
                         Utilizing the git flow procedure including (branching,
                         pull, push , standard commit) to better manage the
                         project and code review.
@@ -988,15 +1147,17 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Blockchain and Ethereum Basics</h3>
+                      <h3 data-i18n="skill_blockchain_ethereum_title">
+                        Blockchain and Ethereum Basics
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>
+                      <h4 data-i18n="skill_blockchain_ethereum_tech">
                         Blochchain , Mining , Minting , Ethereum eco , Defi ,
                         Protocols ,...
                       </h4>
-                      <p>
+                      <p data-i18n="skill_blockchain_ethereum_description">
                         Everything about Blockchain (Specially Ethereum) ,
                         Protocols , Ecosystems , transactions , mining system ,
                         data storing system , ..... .
@@ -1027,12 +1188,16 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Smart Contract development</h3>
+                      <h3 data-i18n="skill_smart_contract_dev_title">
+                        Smart Contract development
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>Solidity , Hardhat , EthersJS</h4>
-                      <p>
+                      <h4 data-i18n="skill_smart_contract_dev_tech">
+                        Solidity , Hardhat , EthersJS
+                      </h4>
+                      <p data-i18n="skill_smart_contract_dev_description">
                         Developing , Deploying , Running , Securing optimized
                         Smart Contracts with most modern and update able
                         frameworks of solidity language .
@@ -1063,12 +1228,16 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Working with paackages and Libraries</h3>
+                      <h3 data-i18n="skill_packages_libraries_title">
+                        Working with paackages and Libraries
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>NPM , Node , package managers , scripts , ...</h4>
-                      <p>
+                      <h4 data-i18n="skill_packages_libraries_tech">
+                        NPM , Node , package managers , scripts , ...
+                      </h4>
+                      <p data-i18n="skill_packages_libraries_description">
                         Taking advantage of node package manager in projects to
                         implement famous libraries. I know how to install ,
                         initialize and manage diffrent packages .
@@ -1098,12 +1267,16 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Speaking multiple Languages</h3>
+                      <h3 data-i18n="skill_languages_title">
+                        Speaking multiple Languages
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>German , English , Persian</h4>
-                      <p>
+                      <h4 data-i18n="skill_languages_tech">
+                        German , English , Persian
+                      </h4>
+                      <p data-i18n="skill_languages_description">
                         I can speak English well ( in the level of about IELTS 6
                         - 6.5 ) and Im pretty satisfied to working in English
                         language companies and teams . Also I have studied
@@ -1131,10 +1304,12 @@
                 data-aos-duration="700"
                 data-aos-delay="100"
               >
-                <h5>PROJECTS</h5>
-                <h1>Here Is My Top Projects.</h1>
+                <h5 data-i18n="projects_heading">PROJECTS</h5>
+                <h1 data-i18n="projects_intro_title">
+                  Here Is My Top Projects.
+                </h1>
 
-                <p class="text-intro">
+                <p class="text-intro" data-i18n="projects_intro_text">
                   Here is Some of my most challenging projects which i tried my
                   best to show my skills in them and I also tried to build them
                   with details.
@@ -1170,12 +1345,16 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Personal Portfolio</h3>
+                      <h3 data-i18n="project_personal_portfolio_title">
+                        Personal Portfolio
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>HTML5 , SASS (scss) , vanilla JS , Swiper JS</h4>
-                      <p>
+                      <h4 data-i18n="project_personal_portfolio_tech">
+                        HTML5 , SASS (scss) , vanilla JS , Swiper JS
+                      </h4>
+                      <p data-i18n="project_personal_portfolio_description">
                         My personal portfolio app using fancy effects and
                         minimal as possible UI design made by HTML5 , SASS
                         (scss) , vanilla JS , Swiper JS wich you are in it now
@@ -1184,12 +1363,13 @@
                     </div>
 
                     <div class="section-5-buttons">
-                      <h6>Projects Links</h6>
+                      <h6 data-i18n="project_links_heading">Projects Links</h6>
 
                       <div>
                         <a
                           href="https://github.com/danialeyz/Portfolio"
                           target="_blank"
+                          data-i18n="project_view_on_github"
                           >View Project on github</a
                         >
                       </div>
@@ -1218,12 +1398,14 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Todo-list app</h3>
+                      <h3 data-i18n="project_todo_list_title">Todo-list app</h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>HTML5 , Tailwind css , local Storage , JS</h4>
-                      <p>
+                      <h4 data-i18n="project_todo_list_tech">
+                        HTML5 , Tailwind css , local Storage , JS
+                      </h4>
+                      <p data-i18n="project_todo_list_description">
                         A todo-list app with : Adding todo items , Removing todo
                         items , Editing todo items and Saving , removing ,
                         editing items in Local storage. Made with ( HTML 5 - CSS
@@ -1231,17 +1413,19 @@
                       </p>
                     </div>
                     <div class="section-5-buttons">
-                      <h6>Projects Links</h6>
+                      <h6 data-i18n="project_links_heading">Projects Links</h6>
 
                       <div>
                         <a
                           href="https://github.com/danialeyz/todolist-project"
                           target="_blank"
+                          data-i18n="project_view_on_github"
                           >View Project on github</a
                         >
                         <a
                           href="https://todolist-project-xi.vercel.app"
                           target="_blank"
+                          data-i18n="project_view_on_vercel"
                           >View Project on VERCEL</a
                         >
                       </div>
@@ -1271,12 +1455,14 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Weather App</h3>
+                      <h3 data-i18n="project_weather_app_title">Weather App</h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>HTML5 , CSS3, Fetch API , JS</h4>
-                      <p>
+                      <h4 data-i18n="project_weather_app_tech">
+                        HTML5 , CSS3, Fetch API , JS
+                      </h4>
+                      <p data-i18n="project_weather_app_description">
                         A weather with responsive and minimal UI design using
                         real world online Weather API called "Open Weather Map
                         API" with Fetch API method , made by html , css,
@@ -1284,17 +1470,19 @@
                       </p>
                     </div>
                     <div class="section-5-buttons">
-                      <h6>Projects Links</h6>
+                      <h6 data-i18n="project_links_heading">Projects Links</h6>
 
                       <div>
                         <a
                           href="https://github.com/danialeyz/Weather-App"
                           target="_blank"
+                          data-i18n="project_view_on_github"
                           >View Project on github</a
                         >
                         <a
                           href="https://weather-app-two-kappa-23.vercel.app/"
                           target="_blank"
+                          data-i18n="project_view_on_vercel"
                           >View Project on VERCEL</a
                         >
                       </div>
@@ -1326,29 +1514,35 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>SPA App (single page application)</h3>
+                      <h3 data-i18n="project_spa_app_title">
+                        SPA App (single page application)
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>HTML5 , Tailwind css , DaisyUi , JS (modular)</h4>
-                      <p>
+                      <h4 data-i18n="project_spa_app_tech">
+                        HTML5 , Tailwind css , DaisyUi , JS (modular)
+                      </h4>
+                      <p data-i18n="project_spa_app_description">
                         A single page application with Landing page - Navigator
                         menu , +5 Themes and many interactive pages and
                         components, ... . Made with ( HTML 5 -Tailwind CSS- JS)
                       </p>
                     </div>
                     <div class="section-5-buttons">
-                      <h6>Projects Links</h6>
+                      <h6 data-i18n="project_links_heading">Projects Links</h6>
 
                       <div>
                         <a
                           href="https://github.com/danialeyz/SPA-app"
                           target="_blank"
+                          data-i18n="project_view_on_github"
                           >View Project on github</a
                         >
                         <a
                           href="https://shopping-app-spa.vercel.app/"
                           target="_blank"
+                          data-i18n="project_view_on_vercel"
                           >View Project on VERCEL</a
                         >
                       </div>
@@ -1378,12 +1572,14 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>Note App (OOP)</h3>
+                      <h3 data-i18n="project_note_app_title">Note App (OOP)</h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>OOP , Tailwind CSS</h4>
-                      <p>
+                      <h4 data-i18n="project_note_app_tech">
+                        OOP , Tailwind CSS
+                      </h4>
+                      <p data-i18n="project_note_app_description">
                         A NOTE app with : OOP (Object Oriented programming) ,
                         Adding Note editing Note and minimal and interactive
                         design.
@@ -1391,17 +1587,19 @@
                     </div>
 
                     <div class="section-5-buttons">
-                      <h6>Projects Links</h6>
+                      <h6 data-i18n="project_links_heading">Projects Links</h6>
 
                       <div>
                         <a
                           href="https://github.com/danialeyz/Note-App-OOP"
                           target="_blank"
+                          data-i18n="project_view_on_github"
                           >View Project on github</a
                         >
                         <a
                           href="https://shopping-app-spa.vercel.app/"
                           target="_blank"
+                          data-i18n="project_view_on_vercel"
                           >View Project on VERCEL</a
                         >
                       </div>
@@ -1431,29 +1629,33 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>TIC TAC TOE Game</h3>
+                      <h3 data-i18n="project_tic_tac_toe_title">
+                        TIC TAC TOE Game
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>Javascript</h4>
-                      <p>
+                      <h4 data-i18n="project_tic_tac_toe_tech">Javascript</h4>
+                      <p data-i18n="project_tic_tac_toe_description">
                         This project is a Tic Tac Toe game implemented in
                         Javascript.
                       </p>
                     </div>
 
                     <div class="section-5-buttons">
-                      <h6>Projects Links</h6>
+                      <h6 data-i18n="project_links_heading">Projects Links</h6>
 
                       <div>
                         <a
                           href="https://github.com/danialeyz/tic-tac-toe"
                           target="_blank"
+                          data-i18n="project_view_on_github"
                           >View Project on github</a
                         >
                         <a
                           href="https://tic-tac-toe-danialeyz.vercel.app/"
                           target="_blank"
+                          data-i18n="project_view_on_vercel"
                           >View Project on VERCEL</a
                         >
                       </div>
@@ -1483,12 +1685,18 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>School managment Smart Contract</h3>
+                      <h3 data-i18n="project_school_management_contract_title">
+                        School managment Smart Contract
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>Solidity Language , Blockchain</h4>
-                      <p>
+                      <h4 data-i18n="project_school_management_contract_tech">
+                        Solidity Language , Blockchain
+                      </h4>
+                      <p
+                        data-i18n="project_school_management_contract_description"
+                      >
                         My very first project using Solidity language on Remix
                         IDE. It serves as my practical project for the Solidity
                         bootcamp, showcasing my skills and understanding of
@@ -1497,12 +1705,13 @@
                     </div>
 
                     <div class="section-5-buttons">
-                      <h6>Projects Links</h6>
+                      <h6 data-i18n="project_links_heading">Projects Links</h6>
 
                       <div>
                         <a
                           href="https://github.com/danialeyz/school-managment-contract"
                           target="_blank"
+                          data-i18n="project_view_on_github"
                           >View Project on github</a
                         >
                       </div>
@@ -1532,12 +1741,16 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>INVENTORY APP (OOP)</h3>
+                      <h3 data-i18n="project_inventory_app_title">
+                        INVENTORY APP (OOP)
+                      </h3>
                     </div>
 
                     <div class="timeline-content">
-                      <h4>HTML5 , Tailwind css , OOP</h4>
-                      <p>
+                      <h4 data-i18n="project_inventory_app_tech">
+                        HTML5 , Tailwind css , OOP
+                      </h4>
+                      <p data-i18n="project_inventory_app_description">
                         An INVENTORY app with : OOP (Object Oriented
                         programming) , Adding Inventory items , editing, Sorting
                         items by adding date , listing all available items and
@@ -1545,9 +1758,11 @@
                       </p>
                     </div>
                     <div class="section-5-buttons">
-                      <h6>Projects Links</h6>
+                      <h6 data-i18n="project_links_heading">Projects Links</h6>
 
-                      <div>In Process ...</div>
+                      <div data-i18n="project_inventory_app_status">
+                        In Process ...
+                      </div>
                     </div>
                   </div>
                   <!-- /timeline-block -->
@@ -1574,7 +1789,7 @@
                     </div>
 
                     <div class="timeline-header">
-                      <h3>
+                      <h3 data-i18n="project_more_components_title">
                         More Than
                         <span>10 Usefull Components and Mini Projects</span> and
                         mini projects
@@ -1582,11 +1797,11 @@
                     </div>
 
                     <div class="timeline-content">
-                      <h4>
+                      <h4 data-i18n="project_more_components_tech">
                         Html , css , js , Alipine js , Swiper js , animista ,
                         ...
                       </h4>
-                      <p>
+                      <p data-i18n="project_more_components_description">
                         You can see more than 10 useful components with
                         different Frame works and libraries on my GITHUB Account
                         , such as login/signup forms , landing pages , cards
@@ -1595,12 +1810,13 @@
                       </p>
                     </div>
                     <div class="section-5-buttons">
-                      <h6>Projects Links</h6>
+                      <h6 data-i18n="project_links_heading">Projects Links</h6>
 
                       <div>
                         <a
                           href="https://github.com/danialeyz?tab=repositories"
                           target="_blank"
+                          data-i18n="project_view_on_github"
                           >View Projects on github</a
                         >
                       </div>
@@ -1630,9 +1846,11 @@
     >
       <div class="overlay">
         <div class="header">
-          <h6>SERVICE</h6>
-          <h1>What Can I Do For You?</h1>
-          <p>Here you can see the what i can do for you and your company .</p>
+          <h6 data-i18n="service_heading">SERVICE</h6>
+          <h1 data-i18n="service_intro_title">What Can I Do For You?</h1>
+          <p data-i18n="service_intro_text">
+            Here you can see the what i can do for you and your company .
+          </p>
         </div>
 
         <div class="section-6-cards-container-1">
@@ -1674,8 +1892,10 @@
                 </svg>
               </div>
               <div class="cards-text">
-                <h4>Web Applications Development</h4>
-                <p>
+                <h4 data-i18n="service_web_app_dev_title">
+                  Web Applications Development
+                </h4>
+                <p data-i18n="service_web_app_dev_description">
                   My web application front-end building service utilizes HTML,
                   CSS, and JavaScript, along with popular frameworks. We create
                   visually appealing and interactive user interfaces that
@@ -1704,8 +1924,10 @@
                 </svg>
               </div>
               <div class="cards-text">
-                <h4>Smart Contract Development</h4>
-                <p>
+                <h4 data-i18n="service_smart_contract_dev_title">
+                  Smart Contract Development
+                </h4>
+                <p data-i18n="service_smart_contract_dev_description">
                   Our smart contract development service on the Ethereum
                   blockchain leverages Solidity language and the Hardhat
                   framework. We create secure and efficient smart contracts that
@@ -1842,8 +2064,8 @@
                 </svg>
               </div>
               <div class="cards-text">
-                <h4>NFT Projects</h4>
-                <p>
+                <h4 data-i18n="service_nft_projects_title">NFT Projects</h4>
+                <p data-i18n="service_nft_projects_description">
                   Our NFT project development service utilizes Solidity language
                   and the Hardhat framework. We create unique and secure
                   Non-Fungible Tokens (NFTs) that enable digital ownership,
@@ -1872,8 +2094,12 @@
                 </svg>
               </div>
               <div class="cards-text">
-                <h4>Portfolio or Commercial Websites</h4>
-                <p>
+                <h4 data-i18n="service_portfolio_commercial_websites_title">
+                  Portfolio or Commercial Websites
+                </h4>
+                <p
+                  data-i18n="service_portfolio_commercial_websites_description"
+                >
                   You can have best Portfolio or commercial websites (Like this
                   one !) with any interactive designs you want and i would do
                   this A to Z by myself !
@@ -1907,9 +2133,11 @@
     <!-- !============== FOOTER ================ -->
     <footer id="footer">
       <div class="footer-header">
-        <h6>CONTACT</h6>
-        <h1>I'd Love To Hear From You.</h1>
-        <p>
+        <h6 data-i18n="footer_contact_heading">CONTACT</h6>
+        <h1 data-i18n="footer_contact_intro_title">
+          I'd Love To Hear From You.
+        </h1>
+        <p data-i18n="footer_contact_intro_text">
           Thank you for visiting my portfolio website. I would love to connect
           with you and discuss any opportunities, collaborations, or inquiries
           you may have. Whether you have a project in mind or simply want to say
@@ -1935,8 +2163,8 @@
           </svg>
 
           <div class="footer-item-content">
-            <h5>WHERE TO FIND ME</h5>
-            <p>Tehran , Tehran , Iran</p>
+            <h5 data-i18n="footer_location_heading">WHERE TO FIND ME</h5>
+            <p>28759 Bremen, Germany</p>
           </div>
         </div>
         <!-- footer item -->
@@ -1954,8 +2182,8 @@
             />
           </svg>
           <div class="footer-item-content">
-            <h5>E-MAIL ME</h5>
-            <p>Danialeyvaziiii@gmail.com</p>
+            <h5 data-i18n="footer_email_heading">E-MAIL ME</h5>
+            <p data-i18n="footer_email_value">Danialeyvaziiii@gmail.com</p>
           </div>
         </div>
         <!-- footer item -->
@@ -1974,8 +2202,8 @@
           </svg>
 
           <div class="footer-item-content">
-            <h5>WHATSAPP</h5>
-            <p>+989363789203</p>
+            <h5 data-i18n="footer_whatsapp_heading">WHATSAPP</h5>
+            <p data-i18n="footer_whatsapp_value">+989363789203</p>
           </div>
         </div>
         <!-- footer item -->
@@ -1995,8 +2223,8 @@
           ></a>
 
           <div class="footer-item-content">
-            <h5>LINKEDIN</h5>
-            <p>Click on icon to view</p>
+            <h5 data-i18n="footer_linkedin_heading">LINKEDIN</h5>
+            <p data-i18n="footer_linkedin_value">Click on icon to view</p>
           </div>
         </div>
         <!-- footer item -->
@@ -2015,8 +2243,8 @@
               /></svg
           ></a>
           <div class="footer-item-content">
-            <h5>GITHUB</h5>
-            <p>Click on icon to view</p>
+            <h5 data-i18n="footer_github_heading">GITHUB</h5>
+            <p data-i18n="footer_github_value">Click on icon to view</p>
           </div>
         </div>
       </div>
@@ -2034,9 +2262,9 @@
             d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
           />
         </svg>
-        <h6>
+        <h6 data-i18n="footer_copyright">
           | Coded Fully by Danial Eyvazi in 2023 |
-          <span>
+          <span data-i18n="footer_design_credit">
             Designed by Sltyleshout and Distributed by Danial Eyvazi
           </span>
         </h6>
@@ -2045,10 +2273,11 @@
     </footer>
 
     <!-- app js -->
-    <script src="./js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="/js/main.js"></script>
+    <script src="/js/langSwitcher.js"></script>
   </body>
 </html>

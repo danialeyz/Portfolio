@@ -58,34 +58,29 @@ function typing_animation() {
 
   console.log(word_len);
 
+  // Reduced base duration and delay for faster animation
+  const baseDuration = 1000; // 1 second per word
+  const baseDelay = 300; // 0.3 seconds gap between words
+
   let timings = {
     easing: `steps(${Number(word_len[0] + 1)}, end)`,
     delay: 1500,
-    duration: 1500,
+    duration: baseDuration,
     fill: "forwards",
   };
 
   let cursor_timings = {
-    duration: 700,
+    duration: 690,
     iterations: Infinity,
     easing: "cubic-bezier(0,.26,.44,.93)",
   };
 
-  document.querySelector(".text_cursor").animate(
-    [
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 0,
-        offset: 0.7,
-      },
-      {
-        opacity: 1,
-      },
-    ],
-    cursor_timings
-  );
+  document
+    .querySelector(".text_cursor")
+    .animate(
+      [{ opacity: 0 }, { opacity: 0, offset: 0.7 }, { opacity: 1 }],
+      cursor_timings
+    );
 
   if (text_array_slice.length == 1) {
     timings.easing = `steps(${Number(word_len[0])}, end)`;
@@ -107,15 +102,15 @@ function typing_animation() {
     reveal_animation.onfinish = () => {
       setTimeout(() => {
         document.querySelector(".text_hide").animate([{ left: "0%" }], {
-          duration: 1500,
+          duration: 500,
           easing: "cubic-bezier(.73,0,.38,.88)",
         });
         document.querySelector(".text_cursor").animate([{ left: "0%" }], {
-          duration: 1500,
+          duration: 500,
           easing: "cubic-bezier(.73,0,.38,.88)",
         });
         typing_animation();
-      }, 1000);
+      }, 500);
     };
   } else {
     document
@@ -133,6 +128,8 @@ function typing_animation() {
       );
   }
 
+  let cumulativeDelay = baseDuration + baseDelay;
+
   for (let i = 1; i < text_array_slice.length; i++) {
     console.log(word_len);
     console.log(text_array_slice.length);
@@ -146,9 +143,8 @@ function typing_animation() {
 
     let timings_2 = {
       easing: `steps(${Number(single_word_len + 1)}, end)`,
-      delay: (2 * (i + 1) + 2 * i) * 1000,
-      // delay: ((i*2)-1)*1000,
-      duration: 1500,
+      delay: cumulativeDelay,
+      duration: baseDuration,
       fill: "forwards",
     };
 
@@ -177,15 +173,15 @@ function typing_animation() {
       reveal_animation.onfinish = () => {
         setTimeout(() => {
           document.querySelector(".text_hide").animate([{ left: "0%" }], {
-            duration: 1500,
+            duration: 500,
             easing: "cubic-bezier(.73,0,.38,.88)",
           });
           document.querySelector(".text_cursor").animate([{ left: "0%" }], {
-            duration: 1500,
+            duration: 500,
             easing: "cubic-bezier(.73,0,.38,.88)",
           });
           typing_animation();
-        }, 1000);
+        }, 500);
       };
     } else {
       document.querySelector(".text_hide").animate(
@@ -210,6 +206,7 @@ function typing_animation() {
     }
 
     left_instance = left_instance + (100 / text_len) * (word_len[i] + 1);
+    cumulativeDelay += baseDuration + baseDelay;
   }
 }
 typing_animation();
